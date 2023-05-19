@@ -18,3 +18,13 @@ function nextImg() {
 
 
 }
+
+
+const toggle = document.querySelector('[toggle]')
+const navLinks = document.querySelector('.nav-links')
+
+toggle.onclick = e => {
+    
+    navLinks.classList.toggle('show-links')
+    navLinks.classList.toggle('hidden-links')
+}

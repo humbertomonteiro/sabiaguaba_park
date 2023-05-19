@@ -23,6 +23,17 @@ function ajax(click, url) {
 }
 
 
+
+const toggle = document.querySelector('[toggle]')
+const navLinks = document.querySelector('.nav-links')
+
+toggle.onclick = e => {
+    
+    navLinks.classList.toggle('show-links')
+    navLinks.classList.toggle('hidden-links')
+}
+
+
 ajax(entrada, 'entrada.html')
 ajax(pratos, 'pratos.html')
 ajax(bebidas, 'bebidas.html') 
