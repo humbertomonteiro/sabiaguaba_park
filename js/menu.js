@@ -18,6 +18,8 @@ function ajax(click, url) {
 
             linksCategories.classList.remove('hidden')
             linksCategories.classList.add('links-categories')
+
+            scroll(0, 0)
         }
     })
 }

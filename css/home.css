@@ -363,11 +363,11 @@ header nav a:hover {
 
 
 
-
+/* 
 .menu {
     opacity: 0;
     animation: slideTop .5s ease forwards;
-}
+} */
 
 .menu h1 {
     text-align: center;
@@ -381,6 +381,8 @@ header nav a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
 }
 
 .categories {
@@ -504,7 +506,7 @@ header nav a:hover {
     top: 60px;
     max-width: 100px;
     height: 150px;
-    background-color: #12a8a8d8;
+    background-color: #12a8a8;
     z-index: 5;
     border-radius: 0 0 0 4px;
     opacity: 0;
@@ -586,6 +588,7 @@ header nav a:hover {
         position: fixed;
         top: 60px;
         height: 60px;
+        z-index: 4;
     }
 
 
