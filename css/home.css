@@ -474,9 +474,6 @@ header nav a:hover {
     transition: .5s;
 }
 
-.product ul li:hover {
-    background-color: #d4d4d4;
-}
 
 .product .cut {
     background-color: rgb(255, 255, 255);
