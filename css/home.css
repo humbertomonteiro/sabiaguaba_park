@@ -645,6 +645,11 @@ header nav a:hover {
     .content-logo-text {
         width: 80%;
     }
+
+    .menu h1 {
+        font-size: 2.2rem;
+        margin: 0 0 25px 0;
+    }
 }
 
 
