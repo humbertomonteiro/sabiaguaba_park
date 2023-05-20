@@ -198,7 +198,7 @@ header nav a:hover {
 .content-sociais a {
     opacity: 0;
     animation: slideTop 1s ease forwards;
-    animation-delay: calc(.2s * var(--i));
+    animation-delay: calc(.1s * var(--i));
 }
 
 .content-sociais a i {
@@ -252,7 +252,7 @@ header nav a:hover {
     min-height: 350px;
     opacity: 0;
     animation: slideTop .8s ease forwards;
-    animation-delay: 1s;
+    animation-delay: 1.2s;
 }
 
 .content-logo-text {
@@ -315,7 +315,7 @@ header nav a:hover {
     align-items: center;
     background-image: linear-gradient(to right, #0db0e6, #1BC9C9) ;
     opacity: 0;
-    animation: slideBottom .8s ease forwards;
+    animation: slideTop 1.2s ease forwards;
     animation-delay: 1s;
 }
 
