@@ -28,3 +28,33 @@ toggle.onclick = e => {
     navLinks.classList.toggle('show-links')
     navLinks.classList.toggle('hidden-links')
 }
+
+
+
+const entrada = document.querySelectorAll('[entrada]')
+const pratos = document.querySelectorAll('[pratos]')
+const bebidas = document.querySelectorAll('[bebidas]')
+const frutosDoMar = document.querySelectorAll('[frutosDoMar]')
+const peixes = document.querySelectorAll('[peixes]')
+const sobremesas = document.querySelectorAll('[sobremesas]')
+
+
+
+function ajax(click) {
+    click.forEach(e => {
+        e.onclick = () => {
+            
+            location.href = `/pages/menu.html`
+
+        }
+    })
+}
+
+
+
+ajax(entrada)
+ajax(pratos)
+ajax(bebidas) 
+ajax(frutosDoMar) 
+ajax(peixes) 
+ajax(sobremesas) 

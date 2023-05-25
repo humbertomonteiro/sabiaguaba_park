@@ -31,6 +31,15 @@ function ajax(click, url) {
 
 
 
+ajax(entrada, 'entrada.html')
+ajax(pratos, 'pratos.html')
+ajax(bebidas, 'bebidas.html') 
+ajax(frutosDoMar, 'frutosDoMar.html') 
+ajax(peixes, 'peixes.html') 
+ajax(sobremesas, 'sobremesas.html') 
+
+
+
 const toggle = document.querySelector('[toggle]')
 const navLinks = document.querySelector('.nav-links')
 
@@ -39,11 +48,3 @@ toggle.onclick = e => {
     navLinks.classList.toggle('show-links')
     navLinks.classList.toggle('hidden-links')
 }
-
-
-ajax(entrada, 'entrada.html')
-ajax(pratos, 'pratos.html')
-ajax(bebidas, 'bebidas.html') 
-ajax(frutosDoMar, 'frutosDoMar.html') 
-ajax(peixes, 'peixes.html') 
-ajax(sobremesas, 'sobremesas.html') 
