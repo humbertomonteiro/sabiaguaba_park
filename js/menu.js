@@ -8,6 +8,8 @@ const frutosDoMar = document.querySelectorAll('[frutosDoMar]')
 const peixes = document.querySelectorAll('[peixes]')
 const sobremesas = document.querySelectorAll('[sobremesas]')
 
+const h2 = document.querySelector('.h2')
+
 
 function ajax(click, url) {
     click.forEach(e => {
@@ -18,6 +20,9 @@ function ajax(click, url) {
 
             linksCategories.classList.remove('hidden')
             linksCategories.classList.add('links-categories')
+            h2.style.display = 'none'
+            containerCategories.style.position = 'relative'
+            containerCategories.style.zIndex = '-1'
 
             scroll(0, 0)
         }
