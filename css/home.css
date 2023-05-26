@@ -59,7 +59,7 @@ header nav a {
 }
 
 header nav a:hover {
-    background-color: #0ea7da;
+    background-color: #2ECECE;
 }
 
 header .insta {
@@ -196,7 +196,6 @@ header .insta .media-icon span {
 
 
 .about {
-    height: calc(100vh - 100px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -210,25 +209,31 @@ header .insta .media-icon span {
 }
 
 .container-aboutUs .content-img {
-    width: 70%;
+    width: 60%;
 }
 
 .container-aboutUs .content-img img {
-    width: 100%;
+    width: 90%;
+    margin: 0;
 }
 
 .container-aboutUs .content-text {
-    width: 30%;
+    width: 40%;
     margin: 0 20px 0 100px;
     position: relative;
     z-index: -1;
+}
+
+.container-aboutUs .content-text span {
+    color: #0a50bb;
+    margin-left: 40px;
 }
 
 .container-aboutUs .content-text img {
     width: 300px;
     display: flex;
     justify-content: flex-start;
-    margin: 30px 0;
+    margin: 0 0 30px 0;
 }
 
 .container-aboutUs .content-text p {
@@ -298,6 +303,7 @@ header .insta .media-icon span {
 
 .categorie {
     width: 350px;
+    max-width: 40%;
     margin: 15px;
     display: flex;
     flex-direction: column;
@@ -312,14 +318,16 @@ header .insta .media-icon span {
 }
 
 .categorie h3 {
-    font-size: 1.7rem;
+    font-size: 1.2rem;
     color: #2ECECE;
     font-weight: 100;
+    text-align: center;
 }
 
 
 .categories div img {
-    max-width: 350px;
+    width: 350px;
+    max-width: 100%;
     border-radius: 4px;
     margin: 10px  0 0 0;
 }
@@ -449,6 +457,18 @@ header .insta .media-icon span {
     align-items: center;
     margin: 100px 0;
     width: 100%;
+    overflow-y: hidden;
+    margin: -350px 0 -300px 0;
+}
+
+.content-location {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 100px 0;
+    width: 100%;
+    overflow-y: hidden;
 }
 
 .location-title {
@@ -491,6 +511,28 @@ header .insta .media-icon span {
     max-width: 95%;
     margin: 20px 0;
     border-radius: 20px;
+}
+
+.location-page {
+    margin: -450px 0;
+}
+
+
+
+
+
+.container-boia1 img {
+    width: 400px;
+    position: relative;
+    top: 400px;
+    left: 600px;
+}
+
+.container-boia2 img {
+    width: 400px;
+    position: relative;
+    bottom: 280px;
+    right: 0px;
 }
 
 
@@ -715,6 +757,24 @@ header .insta .media-icon span {
 
 
 
+
+@media (max-width: 1050px) {
+    .container-boia1 img {
+        width: 300px;
+        left: 300px;
+        top: 650px;
+    }
+
+    .container-boia2 img {
+        width: 300px;
+        right: 300px;
+    }
+}
+
+
+
+
+
 @media (max-width: 968px) {
 
     header nav a {
@@ -737,13 +797,14 @@ header .insta .media-icon span {
 
     .container-aboutUs {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 100%;
     }
 
     .container-aboutUs .content-text {
-        width: 95%;
+        width: 90%;
         margin: 0 30px;
     }
 
@@ -751,8 +812,9 @@ header .insta .media-icon span {
         margin-bottom: 20px;
     }
 
-    .container-aboutUs .content-img {
-        display: none;
+    .container-aboutUs .content-img img {
+        margin-top: 30px;
+        width: 100%;
     }
     
 }
@@ -794,6 +856,16 @@ header .insta .media-icon span {
 
 
 
+
+
+    .container-text {
+        margin: 10px 0;
+        height: 150px;
+    }
+
+
+
+
     .container-aboutUs .content-text {
         display: flex;
         flex-direction: column;
@@ -809,6 +881,26 @@ header .insta .media-icon span {
         flex-wrap: wrap;
         justify-content: space-around;
         align-items: center;
+    }
+
+    .menu img {
+        margin: 20px 0 10px 0;
+    }
+
+    .promotion-text {
+        margin: 0;
+    }
+
+    .promotion .promotion-text {
+        margin: 20px 0 0 0;
+    }
+
+    .location-title {
+        margin-bottom: 20px;
+    }
+
+    .experience img {
+        margin: 20px 0 10px 0;
     }
 
     .content-menu-img {
@@ -837,7 +929,7 @@ header .insta .media-icon span {
     }
 
     [toggle]:hover {
-        background-color: #0ea7da;
+        background-color: #2ECECE;
     }
 
     .hidden-links {
@@ -872,6 +964,24 @@ header .insta .media-icon span {
 
     .navigation-auto {
         margin-top: 115px;
+    }
+
+
+
+
+    .container-boia1 img {
+        width: 250px;
+        left: 250px;
+        top: 600px;
+    }
+
+    .container-boia2 img {
+        width: 250px;
+        right: 220px;
+    }
+
+    .location-page {
+        margin: -250px 0;
     }
 }
 
