@@ -508,6 +508,7 @@ header .insta .media-icon span {
 .experience img {
     width: 600px;
     max-width: 100%;
+    margin: 50px 0;
 }
 
 .boxes-experience {
@@ -547,6 +548,7 @@ header .insta .media-icon span {
     min-height: 190px;
     object-fit: cover;
     border-radius: 20px;
+    margin: 0;
 }
 
 
