@@ -33,8 +33,6 @@ toggle.onclick = e => {
 
 window.sr = ScrollReveal({ reset: true })
 
-
-
 sr.reveal('.header', { 
     rotate: { x: 0, y: 80, z:0 },
     duration: 2000 
@@ -101,3 +99,31 @@ divAudio.onclick = () => {
 
     }
 }
+
+
+const entrada = document.querySelectorAll('[entrada]')
+const pratos = document.querySelectorAll('[pratos]')
+const bebidas = document.querySelectorAll('[bebidas]')
+const frutosDoMar = document.querySelectorAll('[frutosDoMar]')
+const peixes = document.querySelectorAll('[peixes]')
+const sobremesas = document.querySelectorAll('[sobremesas]')
+
+const h2 = document.querySelector('.h2')
+
+
+function ajax(click, url) {
+    click.forEach(e => {
+        e.onclick = () => {
+            location.href = 'pages/menu.html'
+        }
+    })
+}
+
+
+
+ajax(entrada, 'entrada.html')
+ajax(pratos, 'pratos.html')
+ajax(bebidas, 'bebidas.html') 
+ajax(frutosDoMar, 'frutosDoMar.html') 
+ajax(peixes, 'peixes.html') 
+ajax(sobremesas, 'sobremesas.html') 
