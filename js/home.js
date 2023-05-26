@@ -74,3 +74,30 @@ sr.reveal('.experience', {
     rotate: { x: 0, y: 80, z:0 },
     duration: 2000 
 })
+
+
+
+const divAudio = document.querySelector('.div-audio')
+const audio = document.querySelector('[audio]')
+const iconAudio = document.querySelector('.icon-audio')
+
+divAudio.onclick = () => {
+    const audioPlay = audio.getAttribute('audio')
+    console.log(typeof(audioPlay))
+
+    if(audioPlay === 'true') {
+        audio.classList.remove('hidden')
+        audio.setAttribute('audio', 'false')
+
+        iconAudio.classList.add('fa-volume-xmark')
+        iconAudio.classList.remove('fa-volume-high')
+
+    } else if (audioPlay === 'false') {
+        audio.classList.add('hidden')
+        audio.setAttribute('audio', 'true')
+
+        iconAudio.classList.remove('fa-volume-xmark')
+        iconAudio.classList.add('fa-volume-high')
+
+    }
+}
