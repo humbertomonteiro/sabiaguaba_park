@@ -190,6 +190,7 @@ header .insta .media-icon span {
 
 .about {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -231,6 +232,18 @@ header .insta .media-icon span {
 
 .container-aboutUs .content-text p {
     color: #acacac;
+}
+
+.div-video {
+    max-width: 95%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-video iframe {
+    border-radius: 10px;
 }
 
 
