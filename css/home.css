@@ -23,8 +23,8 @@ header {
     align-items: center;
     padding: 0 20px;
     height: 170px;
-    opacity: 0;
-    animation: slideBottom .5s ease forwards;
+    position: relative;
+    z-index: 5;
 }
 
 header .logo {
@@ -112,7 +112,6 @@ header .insta .media-icon span {
     max-height: 500px;
     overflow: hidden;
     position: relative;
-    z-index: -1;
 }
 
 .slides {
@@ -356,8 +355,6 @@ header .insta .media-icon span {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    opacity: 0;
-    animation: slideBottom .8s ease forwards;
 }
 
 .container-promotion h2 {
@@ -453,6 +450,8 @@ header .insta .media-icon span {
     width: 100%;
     overflow-x: hidden;
     margin: -350px 0 -300px 0;
+    position: relative;
+    z-index: 2;
 }
 
 .content-location {
@@ -1039,4 +1038,25 @@ header .insta .media-icon span {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+
+
+
+.header,
+.slider,
+.container-text,
+.container-aboutUs, 
+.menu,
+.container-promotion,
+.container-location,
+.experience {
+    visibility: hidden;
+}
+
+.about .container-aboutUs,
+.container-menu .menu,
+.location-page .container-location,
+.container-experience .experience {
+    visibility: visible;
 }
