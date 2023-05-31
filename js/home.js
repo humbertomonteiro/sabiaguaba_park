@@ -35,42 +35,42 @@ window.sr = ScrollReveal({ reset: true })
 
 sr.reveal('.header', { 
     rotate: { x: 0, y: 80, z:0 },
-    duration: 2000 
+    duration: 1500 
 })
 
 sr.reveal('.slider', { 
     rotate: { x: 0, y: 80, z:0 },
-    duration: 2000 
+    duration: 1500 
 })
 
 sr.reveal('.container-text', { 
     rotate: { x: 0, y: 80, z:0 },
-    duration: 2000 
+    duration: 1500 
 })
 
 sr.reveal('.container-aboutUs', {
     rotate: { x: 0, y: 80, z:0 }, 
-    duration: 2000 
+    duration: 1500 
 })
 
 sr.reveal('.menu', { 
     rotate: { x: 0, y: 80, z:0 },
-    duration: 2000 
+    duration: 1500 
 })
 
 sr.reveal('.container-promotion', { 
     rotate: { x: 0, y: 80, z:0 },
-    duration: 2000 
+    duration: 1500 
 })
 
 sr.reveal('.container-location', { 
     rotate: { x: 0, y: 80, z:0 },
-    duration: 2000 
+    duration: 1500 
 })
 
 sr.reveal('.experience', { 
     rotate: { x: 0, y: 80, z:0 },
-    duration: 2000 
+    duration: 1500 
 })
 
 
@@ -111,13 +111,13 @@ const sobremesas = document.querySelectorAll('[sobremesas]')
 const h2 = document.querySelector('.h2')
 
 
-function ajax(click, url) {
-    click.forEach(e => {
-        e.onclick = () => {
-            location.href = 'pages/menu.html'
-        }
-    })
-}
+// function ajax(click, url) {
+//     click.forEach(e => {
+//         e.onclick = () => {
+//             location.href = 'pdf/cardapio.pdf'
+//         }
+//     })
+// }
 
 
 

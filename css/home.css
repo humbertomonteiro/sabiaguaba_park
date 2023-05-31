@@ -394,6 +394,8 @@ header .insta .media-icon span {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+    z-index: 4;
 }
 
 .container-promotion h2 {
@@ -450,10 +452,10 @@ header .insta .media-icon span {
     min-width: 350px;
     font-size: 1.4rem;
     color: #acacac;
+    margin-bottom: 30px     ;
 }
 
-.promotion .promotion-text button {
-    margin-top: 30px;
+.promotion .promotion-text a {
     width: 350px;
     padding: 10px;
     font-size: 1.5rem;
@@ -463,11 +465,14 @@ header .insta .media-icon span {
     background-color: #0a50bb;
     color: #fff;
     cursor: pointer;
+    position: relative;
+    z-index: 5;
+    text-decoration: none;
     font-family: 'Quicksand', sans-serif;
     transition: .5s;
 }
 
-.promotion .promotion-text button:hover {
+.promotion .promotion-text a:hover {
     background-color: #2ECECE;
 }
 
@@ -490,7 +495,6 @@ header .insta .media-icon span {
     overflow-x: hidden;
     margin: -350px 0 -300px 0;
     position: relative;
-    z-index: 2;
 }
 
 .content-location {
@@ -510,6 +514,8 @@ header .insta .media-icon span {
 }
 
 .location-title img {
+    position: relative;
+    z-index: -2;
     width: 450px;
     max-width: 95%;
 }
@@ -524,6 +530,8 @@ header .insta .media-icon span {
     font-family: 'Quicksand', sans-serif;
     cursor: pointer;
     text-decoration: none;
+    position: relative;
+    z-index: 1;
     transition: .5s;
 }
 
@@ -538,6 +546,8 @@ header .insta .media-icon span {
 }
 
 .location-img img {
+    position: relative;
+    z-index: -2;
     width: 600px;
     max-width: 95%;
     margin: 20px 0;
@@ -555,6 +565,7 @@ header .insta .media-icon span {
 .container-boia1 img {
     width: 400px;
     position: relative;
+    z-index: -1;
     top: 400px;
     left: 600px;
 }
@@ -562,6 +573,7 @@ header .insta .media-icon span {
 .container-boia2 img {
     width: 400px;
     position: relative;
+    z-index: -1;
     bottom: 280px;
     right: 0px;
 }
