@@ -342,6 +342,7 @@ header .insta .media-icon span {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    text-decoration: none;
     transition: .8s;
 }
 
@@ -356,8 +357,7 @@ header .insta .media-icon span {
     text-align: center;
 }
 
-
-.categories div img {
+.categories a img {
     width: 350px;
     max-width: 100%;
     border-radius: 4px;
