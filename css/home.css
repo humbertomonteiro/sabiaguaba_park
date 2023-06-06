@@ -434,7 +434,7 @@ header .insta .media-icon span {
 .carousel-promotion .carousel-item-visible {
     width: 100%;
     opacity: 0;
-    animation: slideRitgh .5s ease forwards;
+    animation: slideRitgh .8s ease forwards;
 }
 
 .carousel-promotion .carousel-item-visible img {
@@ -1083,7 +1083,7 @@ header .insta .media-icon span {
 @keyframes slideRitgh {
     0% {
         opacity: 0;
-        transform: translateX(-100px);
+        transform: translateX(-120px);
     }
 
     100% {
