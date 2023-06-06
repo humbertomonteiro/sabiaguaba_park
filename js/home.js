@@ -101,14 +101,14 @@ divAudio.onclick = () => {
 }
 
 
-const entrada = document.querySelectorAll('[entrada]')
-const pratos = document.querySelectorAll('[pratos]')
-const bebidas = document.querySelectorAll('[bebidas]')
-const frutosDoMar = document.querySelectorAll('[frutosDoMar]')
-const peixes = document.querySelectorAll('[peixes]')
-const sobremesas = document.querySelectorAll('[sobremesas]')
+// const entrada = document.querySelectorAll('[entrada]')
+// const pratos = document.querySelectorAll('[pratos]')
+// const bebidas = document.querySelectorAll('[bebidas]')
+// const frutosDoMar = document.querySelectorAll('[frutosDoMar]')
+// const peixes = document.querySelectorAll('[peixes]')
+// const sobremesas = document.querySelectorAll('[sobremesas]')
 
-const h2 = document.querySelector('.h2')
+// const h2 = document.querySelector('.h2')
 
 
 // function ajax(click, url) {
@@ -121,9 +121,31 @@ const h2 = document.querySelector('.h2')
 
 
 
-ajax(entrada, 'entrada.html')
-ajax(pratos, 'pratos.html')
-ajax(bebidas, 'bebidas.html') 
-ajax(frutosDoMar, 'frutosDoMar.html') 
-ajax(peixes, 'peixes.html') 
-ajax(sobremesas, 'sobremesas.html') 
+// ajax(entrada, 'entrada.html')
+// ajax(pratos, 'pratos.html')
+// ajax(bebidas, 'bebidas.html') 
+// ajax(frutosDoMar, 'frutosDoMar.html') 
+// ajax(peixes, 'peixes.html') 
+// ajax(sobremesas, 'sobremesas.html') 
+
+
+const slides = document.querySelectorAll('[carousel-item]')
+let currentValue = 0
+
+setInterval(() => {
+
+    if(currentValue === slides.length - 1) {
+        currentValue = 0
+    } else {
+        currentValue++
+    }
+
+
+    slides.forEach(e => {
+        e.classList.add('carousel-item')
+    })
+
+    slides[currentValue].classList.remove('carousel-item')
+    slides[currentValue].classList.add('carousel-item-visible')
+
+}, 4000)

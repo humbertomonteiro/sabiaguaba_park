@@ -412,7 +412,7 @@ header .insta .media-icon span {
     width: 100%;
 }
 
-.promotion .promotion-img {
+/* .promotion .promotion-img {
     width: 50%;
     display: flex;
     justify-content: center;
@@ -421,14 +421,37 @@ header .insta .media-icon span {
 
 .promotion .promotion-img img {
     width: 400px;
+} */
+
+
+.carousel-promotion {
+    max-width: 45%;
+    min-width: 350px;
+    display: flex;
+}
+
+.carousel-promotion .carousel-item-visible {
+    width: 100%;
+    opacity: 0;
+    animation: slideRitgh .5s ease forwards;
+}
+
+.carousel-promotion .carousel-item-visible img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.carousel-promotion .carousel-item {
+    display: none;
 }
 
 .promotion .promotion-text {
     width: 48%;
     position: relative;
-    top: -90px;
-    left: -100px;
-    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .promotion .promotion-text .promotion-value {
@@ -450,15 +473,15 @@ header .insta .media-icon span {
 .promotion .promotion-text p {
     max-width: 550px;
     min-width: 350px;
-    font-size: 1.4rem;
+    font-size: 1rem;
     color: #acacac;
     margin-bottom: 30px     ;
 }
 
 .promotion .promotion-text a {
-    width: 350px;
-    padding: 10px;
-    font-size: 1.5rem;
+    width: 380px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
     font-weight: 100;
     border-radius: 30px;
     border: 0;
