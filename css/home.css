@@ -3,6 +3,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Nerko+One&family=Poppins:wght@500&family=Quicksand:wght@300&display=swap');
 
 
+@font-face {
+    font-family: 'coffecake';
+    src: url('../fonts/CoffeCake.ttf') format('truetype');
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
 * {
     margin: 0;
@@ -397,6 +402,7 @@ header .insta .media-icon span {
     align-items: center;
     position: relative;
     z-index: 3;
+    margin-bottom: 30px;
 }
 
 .container-promotion h2 {
@@ -413,7 +419,7 @@ header .insta .media-icon span {
     width: 100%;
 }
 
-/* .promotion .promotion-img {
+.promotion .promotion-img {
     width: 50%;
     display: flex;
     justify-content: center;
@@ -422,7 +428,7 @@ header .insta .media-icon span {
 
 .promotion .promotion-img img {
     width: 400px;
-} */
+}
 
 
 .carousel-promotion {
@@ -481,7 +487,7 @@ header .insta .media-icon span {
 }
 
 .promotion .promotion-text a {
-    width: 380px;
+    width: 300px;
     padding: 10px 20px;
     font-size: 1.2rem;
     font-weight: 100;
@@ -616,9 +622,9 @@ header .insta .media-icon span {
 }
 
 .experience img {
-    width: 600px;
+    width: 500px;
     max-width: 100%;
-    margin: 50px 0;
+    margin: 70px 0 0 0;
 }
 
 .boxes-experience {
@@ -626,40 +632,66 @@ header .insta .media-icon span {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-bottom: 100px;
+    max-width: 1000px;
 }
 
 .boxes-experience .box {
     max-width: 300px;
     max-height: 190px;
-    margin: 40px 0;
+    margin: 50px 0;
 }
 
 .boxes-experience .box h3 {
     width: fit-content;
     font-size: 2rem;
     margin-bottom: 5px;
+    color: #044787;
+    font-family: 'coffecake', cursive;
+}
+
+.boxes-experience .box .font1 {
     transform: rotate(-5deg);
-    color: #0a50bb;
-    font-family: 'Nerko One', cursive;
 }
 
-.boxes-experience .box2 h3 {
-    text-align: center;
+.boxes-experience .box .font2 {
+    transform: rotate(5deg);
 }
 
-.boxes-experience .box3 h3 {
-    text-align: end;
-    transform: rotate(-2.7deg);
+.boxes-experience .box .font3 {
+    transform: rotate(-8deg);
 }
+
 
 .boxes-experience .box img {
-    max-width: 300px;
-    min-height: 190px;
+    width: 300px;
+    height: 190px;
     object-fit: cover;
-    border-radius: 20px;
     margin: 0;
+    border: 5px solid #fff;
+    box-shadow: -5px 5px 7px rgb(172, 172, 172);
+    transition: .8s;
+    cursor: pointer;
 }
+
+.boxes-experience .box img:hover {
+    transform: scale(1.1);
+}
+
+.boxes-experience .box .img1 {
+    transform: rotate(-5deg);
+
+}
+.boxes-experience .box .img2 {
+    transform: rotate(5deg);
+
+}
+.boxes-experience .box .img3 {
+    transform: rotate(-8deg);
+
+}
+
+
+
 
 
 
@@ -671,7 +703,6 @@ header .insta .media-icon span {
     align-items: center;
     position: relative;
 }
-
 
 .product {
     margin: 10px;
@@ -737,6 +768,11 @@ header .insta .media-icon span {
 
 
 
+
+
+
+
+
 .show-links {
     display: flex;
     flex-direction: column;
@@ -765,6 +801,9 @@ header .insta .media-icon span {
 [toggle] {
     display: none;
 }
+
+
+
 
 
 
@@ -1021,10 +1060,28 @@ header .insta .media-icon span {
     .experience h2 {
         font-size: 4rem;
     }
+
+    
+    .boxes-experience .box {
+        margin: 20px -19px;
+    }
+
+    .boxes-experience .box img {
+        width: 170px;
+        height: 150px;
+    }
 }
 
 
 @media (max-width: 480px) {
+
+    .container-aboutUs .content-text span {
+        margin-left: 0;
+    }
+
+
+
+
 
     .manual-navigation {
         margin-top: -35px;
@@ -1039,6 +1096,14 @@ header .insta .media-icon span {
 
     .menu img {
         margin-top: 65px;
+    }
+
+
+
+
+
+    .carousel-promotion .carousel-item-visible {
+        margin-top: 50px;
     }
 
 
