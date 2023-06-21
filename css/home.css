@@ -198,6 +198,7 @@ header .insta .media-icon span {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0 30px;
 }
 
 .container-aboutUs {
@@ -1063,11 +1064,11 @@ header .insta .media-icon span {
 
     
     .boxes-experience .box {
-        margin: 20px -19px;
+        margin: 20px -20px;
     }
 
     .boxes-experience .box img {
-        width: 170px;
+        width: 175px;
         height: 150px;
     }
 }
