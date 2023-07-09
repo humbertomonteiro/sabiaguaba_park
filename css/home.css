@@ -1090,6 +1090,20 @@ header .insta .media-icon span {
     }
 }
 
+.container-imgs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-cardapio img {
+    max-width: 100%;
+}
+
+
+
+
 
 @media (max-width: 480px) {
 
