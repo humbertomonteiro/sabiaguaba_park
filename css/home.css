@@ -563,7 +563,7 @@ header .insta .media-icon span {
 
 .location-title img {
     position: relative;
-    z-index: -2;
+    z-index: 1;
     width: 450px;
     max-width: 95%;
 }
@@ -593,9 +593,9 @@ header .insta .media-icon span {
     align-items: center;
 }
 
-.location-img img {
+.location-img iframe {
     position: relative;
-    z-index: -2;
+    z-index: 1;
     width: 600px;
     max-width: 95%;
     margin: 20px 0;
@@ -613,7 +613,7 @@ header .insta .media-icon span {
 .container-boia1 img {
     width: 300px;
     position: relative;
-    z-index: -1;
+    z-index: 2;
     top: 300px;
     left: 600px;
 }
@@ -621,7 +621,7 @@ header .insta .media-icon span {
 .container-boia2 img {
     width: 300px;
     position: relative;
-    z-index: -1;
+    z-index: 2;
     bottom: 280px;
     right: 0px;
 }
@@ -1097,9 +1097,15 @@ header .insta .media-icon span {
     align-items: center;
 }
 
-.img-cardapio img {
-    max-width: 100%;
+.container-imgs iframe {
+    width: 1000px;
+    max-width: 95%;
+    min-height: 100vh;
 }
+
+/* .img-cardapio img {
+    max-width: 100%;
+} */
 
 
 
