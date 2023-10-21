@@ -1,105 +1,102 @@
+let count = 1;
 
-let count = 1
-
-document.querySelector('#radio1').checked = true
+document.querySelector("#radio1").checked = true;
 
 setInterval(() => {
-    nextImg()
+  nextImg();
 }, 4000);
 
 function nextImg() {
-    count++
+  count++;
 
-    if(count > 4) {
-        count = 1
-    }
+  if (count > 4) {
+    count = 1;
+  }
 
-    document.querySelector('#radio' + count).checked = true
-
-
+  document.querySelector("#radio" + count).checked = true;
 }
 
+const toggle = document.querySelector("[toggle]");
+const navLinks = document.querySelector(".nav-links");
 
-const toggle = document.querySelector('[toggle]')
-const navLinks = document.querySelector('.nav-links')
+toggle.onclick = (e) => {
+  navLinks.classList.toggle("show-links");
+  navLinks.classList.toggle("hidden-links");
+};
 
-toggle.onclick = e => {
-    
-    navLinks.classList.toggle('show-links')
-    navLinks.classList.toggle('hidden-links')
-}
+const links = document.querySelectorAll(".link");
 
+links.forEach((item) => {
+  item.onclick = () => {
+    navLinks.classList.remove("show-links");
+    navLinks.classList.add("hidden-links");
+  };
+});
 
+// window.sr = ScrollReveal({ reset: true })
 
-window.sr = ScrollReveal({ reset: true })
+// sr.reveal('.header', {
+//     rotate: { x: 0, y: 80, z:0 },
+//     duration: 1500
+// })
 
-sr.reveal('.header', { 
-    rotate: { x: 0, y: 80, z:0 },
-    duration: 1500 
-})
+// sr.reveal('.slider', {
+//     rotate: { x: 0, y: 80, z:0 },
+//     duration: 1500
+// })
 
-sr.reveal('.slider', { 
-    rotate: { x: 0, y: 80, z:0 },
-    duration: 1500 
-})
+// sr.reveal('.container-text', {
+//     rotate: { x: 0, y: 80, z:0 },
+//     duration: 1500
+// })
 
-sr.reveal('.container-text', { 
-    rotate: { x: 0, y: 80, z:0 },
-    duration: 1500 
-})
+// sr.reveal('.container-aboutUs', {
+//     rotate: { x: 0, y: 80, z:0 },
+//     duration: 1500
+// })
 
-sr.reveal('.container-aboutUs', {
-    rotate: { x: 0, y: 80, z:0 }, 
-    duration: 1500 
-})
+// sr.reveal('.menu', {
+//     rotate: { x: 0, y: 80, z:0 },
+//     duration: 1500
+// })
 
-sr.reveal('.menu', { 
-    rotate: { x: 0, y: 80, z:0 },
-    duration: 1500 
-})
+// sr.reveal('.container-promotion', {
+//     rotate: { x: 0, y: 80, z:0 },
+//     duration: 1500
+// })
 
-sr.reveal('.container-promotion', { 
-    rotate: { x: 0, y: 80, z:0 },
-    duration: 1500 
-})
+// sr.reveal('.container-location', {
+//     rotate: { x: 0, y: 80, z:0 },
+//     duration: 1500
+// })
 
-sr.reveal('.container-location', { 
-    rotate: { x: 0, y: 80, z:0 },
-    duration: 1500 
-})
+// sr.reveal('.experience', {
+//     rotate: { x: 0, y: 80, z:0 },
+//     duration: 1500
+// })
 
-sr.reveal('.experience', { 
-    rotate: { x: 0, y: 80, z:0 },
-    duration: 1500 
-})
-
-
-
-const divAudio = document.querySelector('.div-audio')
-const audio = document.querySelector('[audio]')
-const iconAudio = document.querySelector('.icon-audio')
+const divAudio = document.querySelector(".div-audio");
+const audio = document.querySelector("[audio]");
+const iconAudio = document.querySelector(".icon-audio");
 
 divAudio.onclick = () => {
-    const audioPlay = audio.getAttribute('audio')
-    console.log(typeof(audioPlay))
+  const audioPlay = audio.getAttribute("audio");
+  console.log(typeof audioPlay);
 
-    if(audioPlay === 'true') {
-        audio.classList.remove('hidden')
-        audio.setAttribute('audio', 'false')
+  if (audioPlay === "true") {
+    audio.classList.remove("hidden");
+    audio.setAttribute("audio", "false");
 
-        iconAudio.classList.add('fa-volume-xmark')
-        iconAudio.classList.remove('fa-volume-high')
+    iconAudio.classList.add("fa-volume-xmark");
+    iconAudio.classList.remove("fa-volume-high");
+  } else if (audioPlay === "false") {
+    audio.classList.add("hidden");
+    audio.setAttribute("audio", "true");
 
-    } else if (audioPlay === 'false') {
-        audio.classList.add('hidden')
-        audio.setAttribute('audio', 'true')
-
-        iconAudio.classList.remove('fa-volume-xmark')
-        iconAudio.classList.add('fa-volume-high')
-
-    }
-}
-
+    iconAudio.classList.remove("fa-volume-xmark");
+    iconAudio.classList.add("fa-volume-high");
+  }
+};
 
 // const entrada = document.querySelectorAll('[entrada]')
 // const pratos = document.querySelectorAll('[pratos]')
@@ -110,7 +107,6 @@ divAudio.onclick = () => {
 
 // const h2 = document.querySelector('.h2')
 
-
 // function ajax(click, url) {
 //     click.forEach(e => {
 //         e.onclick = () => {
@@ -119,33 +115,27 @@ divAudio.onclick = () => {
 //     })
 // }
 
-
-
 // ajax(entrada, 'entrada.html')
 // ajax(pratos, 'pratos.html')
-// ajax(bebidas, 'bebidas.html') 
-// ajax(frutosDoMar, 'frutosDoMar.html') 
-// ajax(peixes, 'peixes.html') 
-// ajax(sobremesas, 'sobremesas.html') 
+// ajax(bebidas, 'bebidas.html')
+// ajax(frutosDoMar, 'frutosDoMar.html')
+// ajax(peixes, 'peixes.html')
+// ajax(sobremesas, 'sobremesas.html')
 
-
-const slides = document.querySelectorAll('[carousel-item]')
-let currentValue = 0
+const slides = document.querySelectorAll("[carousel-item]");
+let currentValue = 0;
 
 setInterval(() => {
+  if (currentValue === slides.length - 1) {
+    currentValue = 0;
+  } else {
+    currentValue++;
+  }
 
-    if(currentValue === slides.length - 1) {
-        currentValue = 0
-    } else {
-        currentValue++
-    }
+  slides.forEach((e) => {
+    e.classList.add("carousel-item");
+  });
 
-
-    slides.forEach(e => {
-        e.classList.add('carousel-item')
-    })
-
-    slides[currentValue].classList.remove('carousel-item')
-    slides[currentValue].classList.add('carousel-item-visible')
-
-}, 4000)
+  slides[currentValue].classList.remove("carousel-item");
+  slides[currentValue].classList.add("carousel-item-visible");
+}, 4000);

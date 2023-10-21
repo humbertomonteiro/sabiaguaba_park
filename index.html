@@ -1,317 +1,387 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="imgs/logo.webp" type="image/x-icon">
-    <script src="https://kit.fontawesome.com/b6c34f0ed7.js" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <link rel="stylesheet" href="./css/home.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="imgs/logo.webp" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/b6c34f0ed7.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <link rel="stylesheet" href="./css/home.css" />
     <title>Sabiaguaba Park</title>
-</head>
-<body>
-    <header class="header">
-        <a class="logo" href="">
+  </head>
+  <body>
+    <header class="header" data-aos="fade-down">
+      <a class="logo" href="">
+        <img src="./imgs/logo.webp" alt="" />
+      </a>
 
-            <img src="./imgs/logo.webp" alt="">
+      <nav class="nav-links hidden-links">
+        <a href="#home" class="link">HOME</a>
+
+        <a href="#about" class="link"> QUEM SOMOS </a>
+
+        <a
+          href="https://drive.google.com/file/d/1Dspq6-McRPGv4QA33IujX93a00qnOFru/view"
+          target="_blank"
+          >CARDÁPIO</a
+        >
+
+        <a href="#location" class="link"> LOCALIZAÇÃO </a>
+        <a href="#experiencie" class="link"> EXPERIÊNCIAS </a>
+      </nav>
+
+      <div class="insta">
+        <a
+          href="https://www.instagram.com/sabiaguabaparkoficial/"
+          target="_blank"
+          class="media-icon"
+        >
+          <i class="fa-brands fa-instagram"></i>
+          <span>Instagram</span>
         </a>
+      </div>
 
-        <nav class="nav-links hidden-links">
-            
-            <a href="./index.html">HOME</a>
-
-            <a 
-                href="./pages/about.html">
-                QUEM SOMOS
-            </a>
-
-            <a href="https://drive.google.com/file/d/1Dspq6-McRPGv4QA33IujX93a00qnOFru/view" target="_blank">CARDÁPIO</a>
-
-            <a 
-                href="./pages/location.html" >
-                LOCALIZAÇÃO
-            </a>
-            <a 
-                href="./pages/experience.html">
-                EXPERIÊNCIAS
-            </a>    
-        </nav>
-
-        <div class="insta">
-            <a href="https://www.instagram.com/sabiaguabaparkoficial/" 
-            target="_blank"
-            class="media-icon">
-                <i class="fa-brands fa-instagram"></i>
-                <span>Instagram</span>
-            </a>
-        </div>
-
-        <div toggle >
-            <i class="fa-solid fa-bars"></i>
-        </div>
+      <div toggle>
+        <i class="fa-solid fa-bars"></i>
+      </div>
     </header>
     <main class="main-home">
-        <div class="slider">   
+      <div class="slider" data-aos="fade-down">
+        <div class="slides">
+          <input type="radio" name="radio-btn" id="radio1" />
+          <input type="radio" name="radio-btn" id="radio2" />
+          <input type="radio" name="radio-btn" id="radio3" />
+          <input type="radio" name="radio-btn" id="radio4" />
 
-            <div class="slides">
-
-                <input type="radio" name="radio-btn" id="radio1">
-                <input type="radio" name="radio-btn" id="radio2">
-                <input type="radio" name="radio-btn" id="radio3">
-                <input type="radio" name="radio-btn" id="radio4">
-
-            
-                <div class="slide first">
-                    <img src="./imgs/img1.png" alt="img1">
-                </div>
-                <div class="slide">
-                    <img src="./imgs/img2.png" alt="img2">
-                </div>
-                <div class="slide">
-                    <img src="./imgs/img3.png" alt="img3">
-                </div>
-                <div class="slide">
-                    <img src="./imgs/img4.png" alt="img4">
-                </div>
-
-            </div>
-
+          <div class="slide first" data-aos="fade-up" id="home">
+            <img src="./imgs/img1.png" alt="img1" />
+          </div>
+          <div class="slide">
+            <img src="./imgs/img2.png" alt="img2" />
+          </div>
+          <div class="slide">
+            <img src="./imgs/img3.png" alt="img3" />
+          </div>
+          <div class="slide">
+            <img src="./imgs/img4.png" alt="img4" />
+          </div>
         </div>
+      </div>
 
-        <article class="container-text">
-            <div class="text">
-                <p>
-                    Viva experiências únicas em um logar paradisiaco.
-                </p>
-            </div>
-        </article>
+      <article class="container-text" data-aos="fade-up">
+        <div class="text">
+          <p>Viva experiências únicas em um logar paradisiaco.</p>
+        </div>
+      </article>
 
-        <article class="container-aboutUs">
-            <div class="content-text">
-                <span>NOS CONHEÇA MELHOR</span>
+      <article id="about" class="container-aboutUs" data-aos="fade-right">
+        <div class="content-text">
+          <span>NOS CONHEÇA MELHOR</span>
 
-                <img src="./imgs/sabiaguabaPark.png" alt="">
-                <p>
-                    Apresentamos o incrível Parque Sabiaguaba - seu refúgio 
-                    natural perfeito! Descubra um oásis de beleza deslumbrante, 
-                    onde a praia e o rio se encontram para criar uma vista de 
-                    tirar o livro. Prepare-se para uma experiência única e 
-                    emocionante em um ambiente naturalmente encantador.
-                </p>
-                <p>
-                    Aqui no Sabiaguaba Park, você encontrará uma variedade de 
-                    experiências incríveis e divertidas para aproveitar ao 
-                    máximo a sua visita. Desde passeios de barco, bugs, 
-                    Helicóptero  que oferecem vistas panorâmicos até atividades 
-                    emocionantes no rio, há algo para todos os aventureiros e 
-                    amantes da natureza.
-                </p>
-                <p>
-                    Não deixe para depois, venha e traga sua Família e amigos!
-                </p>
-            </div>
-            <div class="content-img">
-                <img src="./imgs/aoutUs.png" alt="">
-            </div>
-        </article>
+          <img src="./imgs/sabiaguabaPark.png" alt="Logo" />
+          <p>
+            Apresentamos o incrível Parque Sabiaguaba - seu refúgio natural
+            perfeito! Descubra um oásis de beleza deslumbrante, onde a praia e o
+            rio se encontram para criar uma vista de tirar o livro. Prepare-se
+            para uma experiência única e emocionante em um ambiente naturalmente
+            encantador.
+          </p>
+          <p>
+            Aqui no Sabiaguaba Park, você encontrará uma variedade de
+            experiências incríveis e divertidas para aproveitar ao máximo a sua
+            visita. Desde passeios de barco, bugs, Helicóptero que oferecem
+            vistas panorâmicos até atividades emocionantes no rio, há algo para
+            todos os aventureiros e amantes da natureza.
+          </p>
+          <p>Não deixe para depois, venha e traga sua Família e amigos!</p>
+          <a
+            href="https://api.whatsapp.com/send?phone=5585974006209"
+            target="_blank"
+            ><i class="fa-brands fa-whatsapp"></i>Faça agora sua reserva</a
+          >
+        </div>
+        <div class="content-img">
+          <img src="./imgs/aoutUs.png" alt="logo sobre nós" />
+        </div>
+      </article>
 
-        <article class="menu">
-            <img src="./imgs/cardapioText.png" alt="">
-            <div class="container-categories">
-                <div class="categories">
-                    <a href="https://drive.google.com/file/d/1Dspq6-McRPGv4QA33IujX93a00qnOFru/view" target="_blank" entrada class="categorie">
-                        <h3>Entradas</h3>
-                        <img src="./imgs/imgs-products/entradas.jpg" alt="">
-                    </a>
-                    <a href="https://drive.google.com/file/d/1Dspq6-McRPGv4QA33IujX93a00qnOFru/view" target="_blank" pratos class="categorie">
-                        <h3>Pratos</h3>
-                        <img src="./imgs/imgs-products/pratos.jpg" alt="">
-                    </a>
-                    <a href="https://drive.google.com/file/d/1Dspq6-McRPGv4QA33IujX93a00qnOFru/view" target="_blank" bebidas class="categorie">
-                        <h3>Bebidas</h3>
-                        <img src="./imgs/imgs-products/bebidas.jpg" alt="">
-                    </a>
-                    <a href="https://drive.google.com/file/d/1Dspq6-McRPGv4QA33IujX93a00qnOFru/view" target="_blank" frutosDoMar class="categorie">
-                        <h3>Frutos do mar</h3>
-                        <img src="./imgs/imgs-products/caranguejo.jpg" alt="">
-                    </a>
-                    <a href="https://drive.google.com/file/d/1Dspq6-McRPGv4QA33IujX93a00qnOFru/view" target="_blank" peixes class="categorie">
-                        <h3>Peixes</h3>
-                        <img src="./imgs/imgs-products/peixes.jpg" alt="">
-                    </a>
-                    <a href="https://drive.google.com/file/d/1Dspq6-McRPGv4QA33IujX93a00qnOFru/view" target="_blank" sobremesas class="categorie">
-                        <h3>Sobremesas</h3>
-                        <img src="./imgs/imgs-products/sobremesas.jpg" alt="">
-                    </a>
-                </div>
-            </div>
-        </article>
+      <article class="menu" data-aos="fade-left">
+        <img src="./imgs/cardapioText.png" alt="logo cardápio" />
+        <div class="container-categories">
+          <div class="categories">
+            <a
+              href="https://drive.google.com/file/d/1Dspq6-McRPGv4QA33IujX93a00qnOFru/view"
+              target="_blank"
+              entrada
+              class="categorie"
+            >
+              <h3>Entradas</h3>
+              <img src="./imgs/imgs-products/entradas.jpg" alt="entradas" />
+              <span>Contem a presença de alergênicos</span>
+            </a>
+            <a
+              href="https://drive.google.com/file/d/1Dspq6-McRPGv4QA33IujX93a00qnOFru/view"
+              target="_blank"
+              pratos
+              class="categorie"
+            >
+              <h3>Pratos</h3>
+              <img
+                src="./imgs/imgs-products/pratos.jpg"
+                alt="Pratos diversos"
+              />
+              <span>Contem a presença de alergênicos</span>
+            </a>
+            <a
+              href="https://drive.google.com/file/d/1Dspq6-McRPGv4QA33IujX93a00qnOFru/view"
+              target="_blank"
+              bebidas
+              class="categorie"
+            >
+              <h3>Bebidas</h3>
+              <img src="./imgs/imgs-products/bebidas.jpg" alt="Bebidas" />
+              <span>Contem a presença de alergênicos</span>
+            </a>
+            <a
+              href="https://drive.google.com/file/d/1Dspq6-McRPGv4QA33IujX93a00qnOFru/view"
+              target="_blank"
+              frutosDoMar
+              class="categorie"
+            >
+              <h3>Frutos do mar</h3>
+              <img
+                src="./imgs/imgs-products/caranguejo.jpg"
+                alt="Frutos do mar"
+              />
+              <span>Contem a presença de alergênicos</span>
+            </a>
+            <a
+              href="https://drive.google.com/file/d/1Dspq6-McRPGv4QA33IujX93a00qnOFru/view"
+              target="_blank"
+              peixes
+              class="categorie"
+            >
+              <h3>Peixes</h3>
+              <img src="./imgs/imgs-products/peixes.jpg" alt="" />
+              <span>Contem a presença de alergênicos</span>
+            </a>
+            <a
+              href="https://drive.google.com/file/d/1Dspq6-McRPGv4QA33IujX93a00qnOFru/view"
+              target="_blank"
+              sobremesas
+              class="categorie"
+            >
+              <h3>Sobremesas</h3>
+              <img src="./imgs/imgs-products/sobremesas.jpg" alt="" />
+              <span>Contem a presença de alergênicos</span>
+            </a>
+          </div>
+        </div>
+      </article>
 
-        <article class="container-promotion">
-            <div class="promotion">
-<!-- 
+      <article class="container-promotion" data-aos="fade-left">
+        <div class="promotion">
+          <!-- 
                 <div class="promotion-img"> -->
-                    <!-- <img src="./imgs/imgs-products/camarãoEmpanadoVertical.png" alt=""> -->
-                
-                    <div class="carousel-promotion">
-                        <div carousel-item class="carousel-item-visible">
-                            <img src="./imgs/imgs-products/bebidas.jpg" alt="">
-                        </div>
+          <!-- <img src="./imgs/imgs-products/camarãoEmpanadoVertical.png" alt=""> -->
 
-                        <div carousel-item class="carousel-item">
-                            <img src="./imgs/imgs-products/caipiroscas.jpg" alt="">
-                        </div>
-    
-                        <div carousel-item class="carousel-item">
-                            <img src="./imgs/imgs-products/coqueteis.jpg" alt="">
-                        </div>
-    
-                        <div carousel-item class="carousel-item">
-                            <img src="./imgs/imgs-products/entradas.jpg" alt="">
-                        </div>
-    
-                        <div carousel-item class="carousel-item">
-                            <img src="./imgs/imgs-products/peixes.jpg" alt="">
-                        </div>
-    
-                        <div carousel-item class="carousel-item">
-                            <img src="./imgs/imgs-products/sobremesas.jpg" alt="">
-                        </div>
-    
-                        <div carousel-item class="carousel-item">
-                            <img src="./imgs/imgs-products/pratos.jpg" alt="">
-                        </div>
-                    </div>
-                
-                <!-- </div> -->
-
-                <!-- <div class="promotion-img">
-                    <img src="./imgs/imgs-products/camarãoEmpanadoVertical.png" alt="">
-                </div> -->
-
-                <div class="promotion-text">
-                    <div class="promotion-value">
-                        <h2>Camarão crocante</h2>
-                        <h3>
-                            R$ 69,90
-                            <span>UND</span>
-                        </h3>
-                    </div>
-                    <p>
-                        Imagine saborear um suculento camarão grelhado enquanto 
-                        o sol se põe no horizonte, ou saborear um peixe fresco 
-                        enquanto sente a brisa suave acariciar seu rosto. No 
-                        Parque Sabiaguaba, cada refeição é uma combinação perfeita 
-                        de sabores irresistíveis e uma vista deslumbrante para 
-                        tornar sua experiência vivida. Desfrute de uma experiência 
-                        culinária inesquecível na praia no Parque Natural em 
-                        Sabiaguaba! Delicie-se com nossos pratos magníficos e 
-                        saborosos enquanto aproveita a beleza natural ao seu redor.
-                    </p>
-                    <p>
-                        Bem-vindo ao paraíso gastronômico à beira-mar! No Parque 
-                        Sabiaguaba, nossa equipe de talentosos chefs prepara uma 
-                        variedade de pratos que combinam perfeitamente com uma 
-                        vista deslumbrante da praia. Desde frutos do mar frescos 
-                        até opções vegetarianas e veganas, temos algo para agradar 
-                        a todos os paladares.
-                    </p>
-
-                    <p>
-                        Deleite-se com o sabor do mar em cada mordida. Desde 
-                        pratos clássicos até criações exclusivas, cada refeição 
-                        é uma obra de arte culinária que encantará seu paladar. 
-                        Além disso, nosso ambiente descontraído e acolhedor 
-                        proporciona o cenário perfeito para desfrutar de uma 
-                        refeição relaxante. Sinta a areia sob seus pés, ouça 
-                        o som das ondas e deixe-se levar por uma experiência 
-                        gastronômica única.
-                    </p>
-
-                    <a href="https://api.whatsapp.com/send?phone=5585974006209" 
-                    target="_blank">
-                        <i class="fa-solid fa-hand-pointer"></i>
-                        FAÇA SUA RESERVA
-                    </a>
-                </div>
+          <div class="carousel-promotion">
+            <div carousel-item class="carousel-item-visible">
+              <img src="./imgs/imgs-products/bebidas.jpg" alt="" />
             </div>
-        </article>
 
-        <article class="container-location">
-            <div class="container-boia1">
-                <img src="./imgs/boia.png" alt="">
+            <div carousel-item class="carousel-item">
+              <img src="./imgs/imgs-products/caipiroscas.jpg" alt="" />
             </div>
-            <div class="content-location">
-                <div class="location-title">
-                    <img src="./imgs/location-img.png" alt="">
-                    <a
-                    href="https://www.google.com/maps/place/Sabiaguaba+Park+(+Foz+do+Rio+Coc%C3%B3)/@-3.7724127,-38.4350309,15z/data=!4m5!3m4!1s0x0:0x1b09fd4af9fadf2c!8m2!3d-3.7724127!4d-38.4350309"
-                    target="_blank">
-                    CLICK AQUI</a>
-                </div>
-                <div class="location-img">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15924.693730238952!2d-38.4350309!3d-3.7724127!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c74429cb020ff1%3A0x1b09fd4af9fadf2c!2sSabiaguaba%20Park%20(%20Foz%20do%20Rio%20Coc%C3%B3)!5e0!3m2!1spt-BR!2sbr!4v1691589459508!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    <!-- <img src="./imgs/location.png" alt=""> -->
-                </div>
-            </div>
-            <div class="container-boia2">
-                <img src="./imgs/boia.png" alt="">
-            </div>
-        </article>
-        
 
-        <article class="experience">
-            <img src="./imgs/experience.png" alt="">
-            <div class="boxes-experience">
-                <div class="box">
-                    <h3 class="font1">Barco</h3>
-                    <img class="img1" src="./imgs/barco.png" alt="">
-                </div>
-                <div class="box">
-                    <h3 class="font3">Bug</h3>
-                    <img class="img3" src="./imgs/buggy.png" alt="">
-                </div>
-                <div class="box">
-                    <h3 class="font2">Helicoptero</h3>
-                    <img class="img2" src="./imgs/helicoptero.png" alt="">
-                </div>
-                <div class="box">
-                    <h3 class="font3">Pescaria</h3>
-                    <img class="img3" src="./imgs/pescaria.png" alt="">
-                </div>
-                <div class="box">
-                    <h3 class="font2">Paramotor</h3>
-                    <img class="img2" src="./imgs/paramotor.png" alt="">
-                </div>
+            <div carousel-item class="carousel-item">
+              <img src="./imgs/imgs-products/coqueteis.jpg" alt="" />
             </div>
-        </article>
 
+            <div carousel-item class="carousel-item">
+              <img src="./imgs/imgs-products/entradas.jpg" alt="" />
+            </div>
+
+            <div carousel-item class="carousel-item">
+              <img src="./imgs/imgs-products/peixes.jpg" alt="" />
+            </div>
+
+            <div carousel-item class="carousel-item">
+              <img src="./imgs/imgs-products/sobremesas.jpg" alt="" />
+            </div>
+
+            <div carousel-item class="carousel-item">
+              <img src="./imgs/imgs-products/pratos.jpg" alt="" />
+            </div>
+          </div>
+
+          <div class="promotion-text">
+            <div class="promotion-value">
+              <h2>Camarão crocante</h2>
+              <h3>
+                R$ 69,90
+                <span>UND</span>
+              </h3>
+            </div>
+            <p>
+              Imagine saborear um suculento camarão grelhado enquanto o sol se
+              põe no horizonte, ou saborear um peixe fresco enquanto sente a
+              brisa suave acariciar seu rosto. No Parque Sabiaguaba, cada
+              refeição é uma combinação perfeita de sabores irresistíveis e uma
+              vista deslumbrante para tornar sua experiência vivida. Desfrute de
+              uma experiência culinária inesquecível na praia no Parque Natural
+              em Sabiaguaba! Delicie-se com nossos pratos magníficos e saborosos
+              enquanto aproveita a beleza natural ao seu redor.
+            </p>
+            <p>
+              Bem-vindo ao paraíso gastronômico à beira-mar! No Parque
+              Sabiaguaba, nossa equipe de talentosos chefs prepara uma variedade
+              de pratos que combinam perfeitamente com uma vista deslumbrante da
+              praia. Desde frutos do mar frescos até opções vegetarianas e
+              veganas, temos algo para agradar a todos os paladares.
+            </p>
+
+            <p>
+              Deleite-se com o sabor do mar em cada mordida. Desde pratos
+              clássicos até criações exclusivas, cada refeição é uma obra de
+              arte culinária que encantará seu paladar. Além disso, nosso
+              ambiente descontraído e acolhedor proporciona o cenário perfeito
+              para desfrutar de uma refeição relaxante. Sinta a areia sob seus
+              pés, ouça o som das ondas e deixe-se levar por uma experiência
+              gastronômica única.
+            </p>
+
+            <a
+              href="https://api.whatsapp.com/send?phone=5585974006209"
+              target="_blank"
+            >
+              <i class="fa-solid fa-hand-pointer"></i>
+              FAÇA SUA RESERVA
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article id="location" class="container-location" data-aos="fade-right">
+        <div class="container-boia1">
+          <img src="./imgs/boia.png" alt="" />
+        </div>
+        <div class="content-location">
+          <div class="location-title">
+            <img
+              class="location-img-logo"
+              src="./imgs/location-img.png"
+              alt=""
+            />
+            <img
+              class="location-img-mobile-logo"
+              src="./imgs/location-img-mobile.png"
+              alt=""
+            />
+            <a
+              href="https://www.google.com/maps/place/Sabiaguaba+Park+(+Foz+do+Rio+Coc%C3%B3)/@-3.7724127,-38.4350309,15z/data=!4m5!3m4!1s0x0:0x1b09fd4af9fadf2c!8m2!3d-3.7724127!4d-38.4350309"
+              target="_blank"
+            >
+              CLICK AQUI</a
+            >
+          </div>
+
+          <div class="location-img">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15924.693730238952!2d-38.4350309!3d-3.7724127!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c74429cb020ff1%3A0x1b09fd4af9fadf2c!2sSabiaguaba%20Park%20(%20Foz%20do%20Rio%20Coc%C3%B3)!5e0!3m2!1spt-BR!2sbr!4v1691589459508!5m2!1spt-BR!2sbr"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <div class="container-boia2">
+          <img src="./imgs/boia.png" alt="" />
+        </div>
+      </article>
+
+      <article id="experiencie" class="experience" data-aos="fade-right">
+        <img src="./imgs/experience.png" alt="" />
+        <div class="boxes-experience">
+          <div class="box">
+            <h3 class="font1">Barco</h3>
+            <img class="img1" src="./imgs/barco.png" alt="" />
+          </div>
+          <div class="box">
+            <h3 class="font3">Bug</h3>
+            <img class="img3" src="./imgs/buggy.png" alt="" />
+          </div>
+          <div class="box">
+            <h3 class="font2">Helicoptero</h3>
+            <img class="img2" src="./imgs/helicoptero.png" alt="" />
+          </div>
+          <div class="box">
+            <h3 class="font3">Pescaria</h3>
+            <img class="img3" src="./imgs/pescaria.png" alt="" />
+          </div>
+          <div class="box">
+            <h3 class="font2">Paramotor</h3>
+            <img class="img2" src="./imgs/paramotor.png" alt="" />
+          </div>
+          <div class="box">
+            <h3 class="font3">Massagem</h3>
+            <img class="img3" src="./imgs/massagem.jpg" alt="" />
+          </div>
+        </div>
+      </article>
     </main>
 
-    <!-- <footer>
-        <div>
-            <div>
-                <img src="imgs/logo.webp" alt="">
-            </div>
-            <div class="footer-div">
-                Viva experiências únicas em um logar paradisiaco
-            </div>
+    <footer>
+      <div class="footer-info">
+        <div class="footer-image">
+          <img src="imgs/logo.webp" alt="logo" />
+          <p>Viva experiências únicas em um logar paradisiaco</p>
         </div>
-        <div>
-            <a href="">sabiaguabaparkoficial</a>
-            <div>
-                <a href="#">(85) 2134-1120</a>
-                <a href="">(85) 9 7400-6209</a>
-            </div>
-
+        <div class="contacts">
+          <h3>Contatos</h3>
+          <div>
+            <p>Telefone: (85) 9 7400-6209</p>
+            <p>Whatsapp: (85) 2134-1120</p>
+            <p>Email: sabiaguabapark@gmail.com</p>
+          </div>
         </div>
-    </footer> -->
+      </div>
+      <div class="created">
+        <p>Todos os direitos reservados</p>
+        <p>|</p>
+        <p>
+          Tecnologia -
+          <a href="https://portfolio-three-bay-73.vercel.app/" target="_blank"
+            >Humberto Monteiro</a
+          >
+        </p>
+      </div>
+    </footer>
     <div class="div-audio">
-        <i class="fa-solid fa-volume-high icon-audio"></i>
-        <audio class="hidden" audio='true' controls src="./audio/01 - LOVE GOSTOSINHO.mp3" autoplay></audio>
+      <i class="fa-solid fa-volume-high icon-audio"></i>
+      <audio
+        class="hidden"
+        audio="true"
+        controls
+        src="./audio/01 - LOVE GOSTOSINHO.mp3"
+        autoplay
+      ></audio>
     </div>
 
     <script src="./js/home.js"></script>
-</body>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>
