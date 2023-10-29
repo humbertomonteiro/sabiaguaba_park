@@ -101,34 +101,18 @@ setInterval(() => {
   audio.src = audios[playAudio].audio;
 }, audios[playAudio].duration);
 
-let audioPause = false;
+let audioPause = true;
 
 divAudio.onclick = () => {
   audioPause = !audioPause;
 
   if (audioPause) {
-    audio.pause();
+    audio.play();
     divAudio.innerHTML = '<i class="fa-solid fa-volume-high icon-audio"></i>';
   } else {
-    audio.play();
+    audio.pause();
     divAudio.innerHTML = '<i class="fa-solid fa-volume-xmark icon-audio"></i>';
   }
-
-  // const audioPlay = audio.getAttribute("audio");
-
-  // if (audioPlay === "true") {
-  //   audio.classList.remove("hidden");
-  //   audio.setAttribute("audio", "false");
-
-  //   iconAudio.classList.add("fa-volume-xmark");
-  //   iconAudio.classList.remove("fa-volume-high");
-  // } else if (audioPlay === "false") {
-  //   audio.classList.add("hidden");
-  //   audio.setAttribute("audio", "true");
-
-  //   iconAudio.classList.remove("fa-volume-xmark");
-  //   iconAudio.classList.add("fa-volume-high");
-  // }
 };
 
 const nextAudio = document.querySelector(".div-next");
