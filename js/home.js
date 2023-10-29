@@ -75,27 +75,67 @@ links.forEach((item) => {
 //     duration: 1500
 // })
 
+const audios = [
+  { audio: "./audio/01 - LOVE GOSTOSINHO.mp3", duration: "141600" },
+  { audio: "./audio/01 - Wesley Safadão - Coroa Boy.mp3", duration: "132600" },
+  // { audio: "./audio/02 - POSTURADO E CALMO.mp3", duration: "190200" },
+  {
+    audio: "./audio/Barulho do Foguete - Matheus Fernandes.mp3",
+    duration: "125400",
+  },
+  { audio: "./audio/Lapada Dela Matheus Fernandes.mp3", duration: "135000" },
+];
+
 const divAudio = document.querySelector(".div-audio");
 const audio = document.querySelector("[audio]");
 const iconAudio = document.querySelector(".icon-audio");
 
+let playAudio;
+
+playAudio = Math.floor(Math.random() * audios.length);
+
+audio.src = audios[playAudio].audio;
+
+setInterval(() => {
+  playAudio = Math.floor(Math.random() * audios.length);
+  audio.src = audios[playAudio].audio;
+}, audios[playAudio].duration);
+
+let audioPause = false;
+
 divAudio.onclick = () => {
-  const audioPlay = audio.getAttribute("audio");
-  console.log(typeof audioPlay);
+  audioPause = !audioPause;
 
-  if (audioPlay === "true") {
-    audio.classList.remove("hidden");
-    audio.setAttribute("audio", "false");
-
-    iconAudio.classList.add("fa-volume-xmark");
-    iconAudio.classList.remove("fa-volume-high");
-  } else if (audioPlay === "false") {
-    audio.classList.add("hidden");
-    audio.setAttribute("audio", "true");
-
-    iconAudio.classList.remove("fa-volume-xmark");
-    iconAudio.classList.add("fa-volume-high");
+  if (audioPause) {
+    audio.pause();
+    divAudio.innerHTML = '<i class="fa-solid fa-volume-high icon-audio"></i>';
+  } else {
+    audio.play();
+    divAudio.innerHTML = '<i class="fa-solid fa-volume-xmark icon-audio"></i>';
   }
+
+  // const audioPlay = audio.getAttribute("audio");
+
+  // if (audioPlay === "true") {
+  //   audio.classList.remove("hidden");
+  //   audio.setAttribute("audio", "false");
+
+  //   iconAudio.classList.add("fa-volume-xmark");
+  //   iconAudio.classList.remove("fa-volume-high");
+  // } else if (audioPlay === "false") {
+  //   audio.classList.add("hidden");
+  //   audio.setAttribute("audio", "true");
+
+  //   iconAudio.classList.remove("fa-volume-xmark");
+  //   iconAudio.classList.add("fa-volume-high");
+  // }
+};
+
+const nextAudio = document.querySelector(".div-next");
+
+nextAudio.onclick = () => {
+  playAudio = Math.floor(Math.random() * audios.length);
+  audio.src = audios[playAudio].audio;
 };
 
 // const entrada = document.querySelectorAll('[entrada]')

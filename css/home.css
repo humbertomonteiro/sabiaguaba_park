@@ -82,12 +82,12 @@ header .insta .media-icon {
   justify-content: center;
   align-items: center;
   max-width: 100px;
-  border: 1px solid black;
+  /* border: 1px solid #0a50bb; */
   border-radius: 10px;
   padding: 10px;
   cursor: pointer;
   text-decoration: none;
-  color: #000;
+  color: #0a50bb;
   transition: 0.5s;
 }
 
@@ -107,7 +107,7 @@ header .insta .media-icon span {
 
 .slider {
   margin: 0 auto;
-  margin-top: 100px;
+  margin-top: 70px;
   width: 100%;
   max-height: 500px;
   overflow: hidden;
@@ -220,7 +220,8 @@ header .insta .media-icon span {
 
 .container-aboutUs .content-text p {
   color: #acacac;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  padding: 10px;
 }
 
 .container-aboutUs .content-text a,
@@ -265,29 +266,59 @@ header .insta .media-icon span {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 10px;
   position: fixed;
-  bottom: 10%;
-  right: 10px;
+  bottom: 20%;
+  right: 0;
   z-index: 4;
 }
 
 .div-audio i {
-  background-color: #2ecece;
+  background-color: #2ecece94;
   color: #fff;
-  border: 1px solid #fff;
   padding: 10px;
-  border-radius: 10px;
-  margin-right: 10px;
   cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 20px 0 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: 0.5s;
 }
+
 .div-audio i:hover {
   background-color: #0a50bb;
 }
 
+.div-audio audio {
+  min-width: 300px;
+}
+
 .hidden {
   display: none;
+}
+
+.div-next {
+  position: fixed;
+  bottom: calc(20% - 60px);
+  right: 0;
+  padding: 10px 12px;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  background-color: #2ecece94;
+  color: #fff;
+  border-radius: 20px 0 0 20px;
+  cursor: pointer;
+  transition: 0.5s;
+  z-index: 5;
+}
+
+.div-next:hover {
+  background-color: #044787;
 }
 
 .links-categories {
@@ -314,7 +345,7 @@ header .insta .media-icon span {
 }
 
 .menu img {
-  width: 300px;
+  width: 100px;
   margin: 50px 0;
 }
 
@@ -483,6 +514,7 @@ header .insta .media-icon span {
   font-size: 1rem;
   color: #acacac;
   margin-bottom: 20px;
+  padding: 10px;
 }
 
 .container-location {
@@ -601,9 +633,9 @@ header .insta .media-icon span {
 }
 
 .boxes-experience .box {
-  max-width: 300px;
+  min-width: 45%;
   max-height: 190px;
-  margin: 50px 0;
+  margin: 70px 0;
 }
 
 .boxes-experience .box h3 {
@@ -751,7 +783,6 @@ header .insta .media-icon span {
   display: flex;
   justify-content: space-around;
   margin-top: 100px;
-  border-top: 1px solid #acacac;
 }
 
 .footer-info .footer-image {
@@ -765,6 +796,7 @@ header .insta .media-icon span {
   font-size: 0.8rem;
   text-align: center;
   color: #acacac;
+  max-width: 200px;
 }
 
 .footer-info .footer-image img {
@@ -790,6 +822,7 @@ header .insta .media-icon span {
 }
 
 .created {
+  margin-top: 50px;
   font-size: 0.8rem;
   padding: 10px;
   display: flex;
@@ -1045,11 +1078,6 @@ header .insta .media-icon span {
   .boxes-experience .box {
     margin: 20px -20px;
   }
-
-  .boxes-experience .box img {
-    width: 175px;
-    height: 150px;
-  }
 }
 
 .container-imgs {
@@ -1102,6 +1130,10 @@ header .insta .media-icon span {
 
   .location-page {
     margin: -250px 0;
+  }
+
+  .boxes-experience .box {
+    width: 45%;
   }
 }
 
@@ -1158,21 +1190,3 @@ header .insta .media-icon span {
     transform: translateY(0);
   }
 }
-
-/* .header,
-.slider,
-.container-text,
-.container-aboutUs,
-.menu,
-.container-promotion,
-.container-location,
-.experience {
-  visibility: hidden;
-} */
-/* 
-.about .container-aboutUs,
-.container-menu .menu,
-.location-page .container-location,
-.container-experience .experience {
-  visibility: visible;
-} */
