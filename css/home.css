@@ -224,7 +224,7 @@ header .insta .media-icon span {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 0 50px 0;
+  margin: 0 0 80px 0;
 }
 
 .container-aboutUs .content-img {
@@ -252,7 +252,7 @@ header .insta .media-icon span {
   width: 300px;
   display: flex;
   justify-content: flex-start;
-  margin: 0 0 30px 0;
+  margin: 0 0 20px 0;
 }
 
 .container-aboutUs .content-text p {
@@ -389,7 +389,7 @@ header .insta .media-icon span {
 
 .menu img {
   width: 300px;
-  margin: 0 0 50px 0;
+  margin: 0 0 20px 0;
 }
 
 .container-categories {
@@ -406,13 +406,12 @@ header .insta .media-icon span {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
 }
 
 .categorie {
   width: 350px;
-  max-width: 40%;
-  margin: 15px;
+  max-width: 45%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -480,8 +479,7 @@ header .insta .media-icon span {
   align-items: center;
   position: relative;
   z-index: 3;
-  margin-top: 40px;
-  margin-bottom: 100px;
+  margin-bottom: 80px;
 }
 
 .container-promotion h2 {
@@ -570,9 +568,9 @@ header .insta .media-icon span {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  padding: 100px 0;
   width: 100%;
   position: relative;
+  margin-bottom: 120px;
 }
 
 .content-location {
@@ -657,7 +655,7 @@ header .insta .media-icon span {
   width: 300px;
   position: absolute;
   z-index: 5;
-  bottom: -20px;
+  bottom: -100px;
 }
 
 .container-boia2 img {
@@ -671,13 +669,11 @@ header .insta .media-icon span {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 40px;
 }
 
 .experience img {
   width: 500px;
   max-width: 100%;
-  margin: 70px 0 0 0;
 }
 
 .boxes-experience {
@@ -898,10 +894,6 @@ header .insta .media-icon span {
 }
 
 @media (max-width: 1100px) {
-  .container-promotion {
-    margin-top: 20px;
-  }
-
   .promotion .promotion-img {
     width: 100%;
   }
@@ -943,10 +935,6 @@ header .insta .media-icon span {
 
   .content-location .location-img-logo {
     display: none;
-  }
-
-  .container-location {
-    padding: 30px 0;
   }
 
   .container-boia1 {
@@ -1057,7 +1045,7 @@ header .insta .media-icon span {
   }
 
   .menu img {
-    margin: 20px 0 10px 0;
+    margin-bottom: 20px;
   }
 
   .promotion-text {
@@ -1161,20 +1149,16 @@ header .insta .media-icon span {
     margin-left: 0;
   }
 
+  .categories a span {
+    font-size: 0.8rem;
+  }
+
   .manual-navigation {
     margin-top: -35px;
   }
 
   .navigation-auto {
     margin-top: 115px;
-  }
-
-  .menu img {
-    margin-top: 65px;
-  }
-
-  .carousel-promotion .carousel-item-visible {
-    margin-top: 50px;
   }
 
   .container-boia1 {
@@ -1192,6 +1176,7 @@ header .insta .media-icon span {
 
   .boxes-experience .box {
     width: 45%;
+    margin: 30px 0;
   }
 
   .footer-info {
