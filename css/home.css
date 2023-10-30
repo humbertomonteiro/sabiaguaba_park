@@ -19,12 +19,15 @@ body {
   overflow-x: hidden;
 }
 
+/* header */
+
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
   height: 100px;
+  max-width: 100%;
   position: fixed;
   top: 0;
   left: 0;
@@ -105,9 +108,39 @@ header .insta .media-icon span {
   font-size: 0.6rem;
 }
 
+.show-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: fixed;
+  right: 0px;
+  top: 80px;
+  padding: 0 10px 10px 10px;
+  max-width: 180px;
+  height: 20 0px;
+  z-index: 5;
+  border-radius: 0 0 0 20px;
+  background-color: #fff;
+  opacity: 0;
+  animation: slideLeft 0.8s ease forwards;
+}
+
+.show-links a {
+  text-align: center;
+  min-width: 165px;
+}
+
+[toggle] {
+  display: none;
+}
+
+/* slides */
+
 .slider {
   margin: 0 auto;
-  margin-top: 70px;
+  margin-top: 100px;
   width: 100%;
   max-height: 500px;
   overflow: hidden;
@@ -151,6 +184,8 @@ header .insta .media-icon span {
   margin-left: -75%;
 }
 
+/* first message */
+
 .container-text {
   display: flex;
   justify-content: center;
@@ -175,12 +210,13 @@ header .insta .media-icon span {
   word-spacing: 3px;
 }
 
+/* about us */
+
 .about {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 30px;
 }
 
 .container-aboutUs {
@@ -188,6 +224,7 @@ header .insta .media-icon span {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0 0 50px 0;
 }
 
 .container-aboutUs .content-img {
@@ -250,6 +287,8 @@ header .insta .media-icon span {
   margin-right: 10px;
 }
 
+/* video about us */
+
 .div-video {
   max-width: 95%;
   margin-top: 30px;
@@ -261,6 +300,8 @@ header .insta .media-icon span {
 .div-video iframe {
   border-radius: 10px;
 }
+
+/* audios */
 
 .div-audio {
   display: flex;
@@ -321,6 +362,8 @@ header .insta .media-icon span {
   background-color: #044787;
 }
 
+/* menu links */
+
 .links-categories {
   display: flex;
   flex-wrap: wrap;
@@ -345,8 +388,8 @@ header .insta .media-icon span {
 }
 
 .menu img {
-  width: 100px;
-  margin: 50px 0;
+  width: 300px;
+  margin: 0 0 50px 0;
 }
 
 .container-categories {
@@ -361,8 +404,9 @@ header .insta .media-icon span {
 .categories {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  margin-bottom: 50px;
 }
 
 .categorie {
@@ -426,6 +470,8 @@ header .insta .media-icon span {
   z-index: -1;
 }
 
+/* promotions */
+
 .container-promotion {
   display: flex;
   flex-wrap: wrap;
@@ -435,7 +481,7 @@ header .insta .media-icon span {
   position: relative;
   z-index: 3;
   margin-top: 40px;
-  margin-bottom: 60px;
+  margin-bottom: 100px;
 }
 
 .container-promotion h2 {
@@ -517,15 +563,15 @@ header .insta .media-icon span {
   padding: 10px;
 }
 
+/* locations */
+
 .container-location {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  margin: 100px 0;
+  padding: 100px 0;
   width: 100%;
-  overflow-x: hidden;
-  margin: -350px 0 -300px 0;
   position: relative;
 }
 
@@ -535,7 +581,8 @@ header .insta .media-icon span {
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
-  margin-top: 50px;
+  overflow-x: hidden;
+  position: relative;
 }
 
 .location-title {
@@ -589,26 +636,35 @@ header .insta .media-icon span {
   margin: 20px 0;
   border-radius: 20px;
 }
-
+/* 
 .location-page {
   margin: -450px 0;
+} */
+
+.container-boia1 {
+  position: absolute;
+  width: 300px;
+  top: -30px;
+  right: -100px;
+  z-index: 5;
 }
 
 .container-boia1 img {
+  width: 100%;
+}
+
+.container-boia2 {
   width: 300px;
-  position: relative;
-  z-index: 2;
-  top: 350px;
-  left: 600px;
+  position: absolute;
+  z-index: 5;
+  bottom: -20px;
 }
 
 .container-boia2 img {
-  width: 300px;
-  position: relative;
-  z-index: 2;
-  bottom: 220px;
-  right: 0px;
+  width: 100%;
 }
+
+/* experiencies */
 
 .experience {
   display: flex;
@@ -635,7 +691,11 @@ header .insta .media-icon span {
 .boxes-experience .box {
   min-width: 45%;
   max-height: 190px;
-  margin: 70px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
 }
 
 .boxes-experience .box h3 {
@@ -682,6 +742,8 @@ header .insta .media-icon span {
 .boxes-experience .box .img3 {
   transform: rotate(-8deg);
 }
+
+/* products menu */
 
 .products {
   display: flex;
@@ -751,38 +813,14 @@ header .insta .media-icon span {
   margin-top: 5px;
 }
 
-.show-links {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  right: 0px;
-  top: 80px;
-  padding: 0 10px 10px 10px;
-  max-width: 180px;
-  height: 20 0px;
-  z-index: 5;
-  border-radius: 0 0 0 4px;
-  background-color: #fff;
-  opacity: 0;
-  animation: slideLeft 0.8s ease forwards;
-}
-
-.show-links a {
-  text-align: center;
-  min-width: 165px;
-  margin-bottom: 10px;
-}
-
-[toggle] {
-  display: none;
-}
+/* footer */
 
 .footer-info {
   display: flex;
   justify-content: space-around;
-  margin-top: 100px;
+  margin-top: 50px;
+  padding-top: 50px;
+  border-top: 1px solid #ebebeb;
 }
 
 .footer-info .footer-image {
@@ -793,20 +831,24 @@ header .insta .media-icon span {
 }
 
 .footer-info .footer-image p {
-  font-size: 0.8rem;
+  /* font-size: 0.8rem; */
   text-align: center;
   color: #acacac;
   max-width: 200px;
 }
 
 .footer-info .footer-image img {
-  width: 100px;
+  width: 150px;
   margin-bottom: -10px;
 }
 
 .footer-info .contacts {
   margin-top: 10px;
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
 }
 
 .footer-info .contacts h3 {
@@ -816,7 +858,7 @@ header .insta .media-icon span {
 }
 
 .footer-info .contacts div p {
-  font-size: 0.8rem;
+  /* font-size: 0.8rem; */
   margin-bottom: 5px;
   color: #acacac;
 }
@@ -907,15 +949,13 @@ header .insta .media-icon span {
     padding: 30px 0;
   }
 
-  .container-boia1 img {
-    width: 300px;
-    left: 300px;
-    top: 400px;
+  .container-boia1 {
+    top: 100px;
+    right: 0;
   }
 
-  .container-boia2 img {
-    width: 300px;
-    right: 300px;
+  .container-boia2 {
+    left: 0;
   }
 }
 
@@ -955,6 +995,17 @@ header .insta .media-icon span {
   }
 }
 
+@media (max-width: 820px) {
+  .container-boia1 {
+    top: 100px;
+    right: -50px;
+  }
+
+  .container-boia2 {
+    left: -50px;
+  }
+}
+
 @media (max-width: 780px) {
   .product ul {
     display: flex;
@@ -963,7 +1014,7 @@ header .insta .media-icon span {
   }
 
   .slider {
-    margin-top: 130px;
+    margin-top: 100px;
   }
 }
 
@@ -1071,15 +1122,23 @@ header .insta .media-icon span {
     font-size: 4rem;
   }
 
+  .container-boia1 {
+    right: -150px;
+  }
+
+  .container-boia2 {
+    left: -150px;
+  }
+
   .experience h2 {
     font-size: 4rem;
   }
 
   .boxes-experience .box {
-    margin: 20px -20px;
+    margin: 50px -20px;
   }
 }
-
+/* 
 .container-imgs {
   display: flex;
   flex-direction: column;
@@ -1091,7 +1150,7 @@ header .insta .media-icon span {
   width: 1000px;
   max-width: 95%;
   min-height: 100vh;
-}
+} */
 
 /* .img-cardapio img {
     max-width: 100%;
@@ -1118,14 +1177,13 @@ header .insta .media-icon span {
     margin-top: 50px;
   }
 
-  .container-boia1 img {
-    width: 250px;
-    left: 230px;
+  .container-boia1 {
+    top: 150px;
+    right: -200px;
   }
 
-  .container-boia2 img {
-    width: 250px;
-    right: 220px;
+  .container-boia2 {
+    left: -200px;
   }
 
   .location-page {
@@ -1134,6 +1192,20 @@ header .insta .media-icon span {
 
   .boxes-experience .box {
     width: 45%;
+  }
+
+  .footer-info {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .footer-info .footer-image img {
+    width: 200px;
+  }
+
+  .footer-info .contacts div p {
+    font-size: 0.8rem;
   }
 }
 

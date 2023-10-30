@@ -33,94 +33,23 @@ links.forEach((item) => {
   };
 });
 
-// window.sr = ScrollReveal({ reset: true })
-
-// sr.reveal('.header', {
-//     rotate: { x: 0, y: 80, z:0 },
-//     duration: 1500
-// })
-
-// sr.reveal('.slider', {
-//     rotate: { x: 0, y: 80, z:0 },
-//     duration: 1500
-// })
-
-// sr.reveal('.container-text', {
-//     rotate: { x: 0, y: 80, z:0 },
-//     duration: 1500
-// })
-
-// sr.reveal('.container-aboutUs', {
-//     rotate: { x: 0, y: 80, z:0 },
-//     duration: 1500
-// })
-
-// sr.reveal('.menu', {
-//     rotate: { x: 0, y: 80, z:0 },
-//     duration: 1500
-// })
-
-// sr.reveal('.container-promotion', {
-//     rotate: { x: 0, y: 80, z:0 },
-//     duration: 1500
-// })
-
-// sr.reveal('.container-location', {
-//     rotate: { x: 0, y: 80, z:0 },
-//     duration: 1500
-// })
-
-// sr.reveal('.experience', {
-//     rotate: { x: 0, y: 80, z:0 },
-//     duration: 1500
-// })
-
-const audios = [
-  { audio: "./audio/01 - LOVE GOSTOSINHO.mp3", duration: "141600" },
-  { audio: "./audio/01 - Wesley Safadão - Coroa Boy.mp3", duration: "132600" },
-  // { audio: "./audio/02 - POSTURADO E CALMO.mp3", duration: "190200" },
-  {
-    audio: "./audio/Barulho do Foguete - Matheus Fernandes.mp3",
-    duration: "125400",
-  },
-  { audio: "./audio/Lapada Dela Matheus Fernandes.mp3", duration: "135000" },
-];
-
-const divAudio = document.querySelector(".div-audio");
-const audio = document.querySelector("[audio]");
-const iconAudio = document.querySelector(".icon-audio");
-
-let playAudio;
-
-playAudio = Math.floor(Math.random() * audios.length);
-
-audio.src = audios[playAudio].audio;
+const slides = document.querySelectorAll("[carousel-item]");
+let currentValue = 0;
 
 setInterval(() => {
-  playAudio = Math.floor(Math.random() * audios.length);
-  audio.src = audios[playAudio].audio;
-}, audios[playAudio].duration);
-
-let audioPause = true;
-
-divAudio.onclick = () => {
-  audioPause = !audioPause;
-
-  if (audioPause) {
-    audio.play();
-    divAudio.innerHTML = '<i class="fa-solid fa-volume-high icon-audio"></i>';
+  if (currentValue === slides.length - 1) {
+    currentValue = 0;
   } else {
-    audio.pause();
-    divAudio.innerHTML = '<i class="fa-solid fa-volume-xmark icon-audio"></i>';
+    currentValue++;
   }
-};
 
-const nextAudio = document.querySelector(".div-next");
+  slides.forEach((e) => {
+    e.classList.add("carousel-item");
+  });
 
-nextAudio.onclick = () => {
-  playAudio = Math.floor(Math.random() * audios.length);
-  audio.src = audios[playAudio].audio;
-};
+  slides[currentValue].classList.remove("carousel-item");
+  slides[currentValue].classList.add("carousel-item-visible");
+}, 4000);
 
 // const entrada = document.querySelectorAll('[entrada]')
 // const pratos = document.querySelectorAll('[pratos]')
@@ -145,21 +74,3 @@ nextAudio.onclick = () => {
 // ajax(frutosDoMar, 'frutosDoMar.html')
 // ajax(peixes, 'peixes.html')
 // ajax(sobremesas, 'sobremesas.html')
-
-const slides = document.querySelectorAll("[carousel-item]");
-let currentValue = 0;
-
-setInterval(() => {
-  if (currentValue === slides.length - 1) {
-    currentValue = 0;
-  } else {
-    currentValue++;
-  }
-
-  slides.forEach((e) => {
-    e.classList.add("carousel-item");
-  });
-
-  slides[currentValue].classList.remove("carousel-item");
-  slides[currentValue].classList.add("carousel-item-visible");
-}, 4000);
