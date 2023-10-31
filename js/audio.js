@@ -32,16 +32,20 @@ divAudio.onclick = () => {
   if (audioPause) {
     audio.play();
     divAudio.innerHTML = '<i class="fa-solid fa-volume-high icon-audio"></i>';
-
-    setInterval(() => {
-      playAudio = Math.floor(Math.random() * audios.length);
-      audio.src = audios[playAudio].audio;
-    }, audios[playAudio].duration);
   } else {
     audio.pause();
     divAudio.innerHTML = '<i class="fa-solid fa-volume-xmark icon-audio"></i>';
   }
 };
+
+if (audioPause) {
+  setInterval(() => {
+    playAudio = Math.floor(Math.random() * audios.length);
+    audio.src = audios[playAudio].audio;
+  }, audios[playAudio].duration);
+} else {
+  audio.pause();
+}
 
 const nextAudio = document.querySelector(".div-next");
 

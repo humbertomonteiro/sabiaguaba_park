@@ -108,6 +108,10 @@ header .insta .media-icon span {
   font-size: 0.6rem;
 }
 
+.main-home {
+  overflow-x: hidden;
+}
+
 .show-links {
   display: flex;
   flex-direction: column;
