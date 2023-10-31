@@ -222,7 +222,7 @@ header .insta .media-icon span {
 .container-aboutUs {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   margin: 0 0 80px 0;
 }
@@ -256,6 +256,10 @@ header .insta .media-icon span {
 .container-aboutUs .content-text p {
   color: #acacac;
   margin-bottom: 10px;
+}
+
+.container-aboutUs .content-text strong {
+  color: #2ecece;
 }
 
 .container-aboutUs .content-text a,
@@ -419,7 +423,7 @@ header .insta .media-icon span {
 }
 
 .categorie:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .categorie h3 {
@@ -552,8 +556,7 @@ header .insta .media-icon span {
 .promotion .promotion-text p {
   font-size: 1rem;
   color: #acacac;
-  margin-bottom: 20px;
-  padding: 10px;
+  margin-bottom: 10px;
 }
 
 /* locations */
@@ -813,8 +816,9 @@ header .insta .media-icon span {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin-top: 50px;
-  padding-top: 50px;
+  margin-top: 20px;
+  padding-top: 20px;
+  gap: 20px;
   border-top: 1px solid #ebebeb;
 }
 
@@ -826,7 +830,6 @@ header .insta .media-icon span {
 }
 
 .footer-info .footer-image p {
-  /* font-size: 0.8rem; */
   text-align: center;
   color: #acacac;
   max-width: 250px;
@@ -845,15 +848,34 @@ header .insta .media-icon span {
   gap: 10px;
 }
 
+.footer-info .contacts .contact {
+  padding: 5px;
+}
+
 .footer-info .contacts .contact h4 {
   margin-bottom: 10px;
   color: #044787;
 }
 
-.footer-info .contacts div p {
+.footer-info .contacts .contact p {
   /* font-size: 0.8rem; */
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   color: #acacac;
+}
+
+.footer-info .contacts .contact .socials {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-info .contacts .contact a i {
+  font-size: 1.8rem;
+  color: #0a50bb;
+  transition: 0.5s;
+}
+
+.footer-info .contacts .contact a i:hover {
+  color: #2ecece;
 }
 
 .created {
@@ -1051,10 +1073,6 @@ header .insta .media-icon span {
 
   .promotion-text {
     margin: 0;
-  }
-
-  .promotion .promotion-text {
-    margin: 20px 0 0 0;
   }
 
   .location-title {
