@@ -108,9 +108,15 @@ header .insta .media-icon span {
   font-size: 0.6rem;
 }
 
+#home {
+  height: 100px;
+}
+
 .main-home {
   overflow-x: hidden;
 }
+
+/* menu mobile */
 
 .show-links {
   display: flex;
@@ -143,8 +149,6 @@ header .insta .media-icon span {
 /* slides */
 
 .slider {
-  margin: 0 auto;
-  margin-top: 100px;
   width: 100%;
   max-height: 500px;
   overflow: hidden;
@@ -228,11 +232,11 @@ header .insta .media-icon span {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 0 0 80px 0;
+  margin-bottom: 80px;
 }
 
 .container-aboutUs .content-img {
-  width: 55%;
+  width: 50%;
 }
 
 .container-aboutUs .content-img img {
@@ -275,7 +279,7 @@ header .insta .media-icon span {
   border-radius: 50px;
   text-decoration: none;
   display: block;
-  margin-top: 15px;
+  margin-top: 20px;
   text-align: center;
   font-size: 1.3em;
   font-family: "Quicksand", sans-serif;
@@ -565,6 +569,10 @@ header .insta .media-icon span {
 
 /* locations */
 
+#location {
+  height: 80px;
+}
+
 .location {
   overflow-x: hidden;
 }
@@ -576,7 +584,6 @@ header .insta .media-icon span {
   align-items: center;
   width: 100%;
   position: relative;
-  margin-bottom: 120px;
 }
 
 .content-location {
@@ -670,6 +677,10 @@ header .insta .media-icon span {
 }
 
 /* experiencies */
+
+#experiencie {
+  height: 80px;
+}
 
 .experience {
   display: flex;
@@ -1029,10 +1040,6 @@ header .insta .media-icon span {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-
-  .slider {
-    margin-top: 100px;
   }
 }
 

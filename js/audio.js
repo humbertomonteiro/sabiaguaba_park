@@ -24,12 +24,12 @@ playAudio = Math.floor(Math.random() * audios.length);
 
 audio.src = audios[playAudio].audio;
 
-let audioPause = true;
+let audioPause = false;
 
 divAudio.onclick = () => {
   audioPause = !audioPause;
 
-  if (audioPause) {
+  if (!audioPause) {
     audio.play();
     divAudio.innerHTML = '<i class="fa-solid fa-volume-high icon-audio"></i>';
   } else {
@@ -53,4 +53,5 @@ nextAudio.onclick = () => {
   playAudio = Math.floor(Math.random() * audios.length);
   audio.src = audios[playAudio].audio;
   divAudio.innerHTML = '<i class="fa-solid fa-volume-high icon-audio"></i>';
+  audioPause = true;
 };
