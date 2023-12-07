@@ -112,10 +112,6 @@ header .insta .media-icon span {
   height: 100px;
 }
 
-.main-home {
-  overflow-x: hidden;
-}
-
 /* menu mobile */
 
 .show-links {
@@ -415,7 +411,6 @@ header .insta .media-icon span {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 80px;
 }
 
 .categorie {
@@ -488,12 +483,12 @@ header .insta .media-icon span {
   align-items: center;
   position: relative;
   z-index: 3;
-  margin-bottom: 80px;
 }
 
-.container-promotion h2 {
+.container-promotion > h2 {
   font-size: 3.2rem;
   color: #2ecece;
+  margin-bottom: 20px;
 }
 
 .promotion {
@@ -525,11 +520,35 @@ header .insta .media-icon span {
   width: 100%;
   opacity: 0;
   animation: slideRitgh 0.8s ease forwards;
+  position: relative;
 }
 
 .carousel-promotion .carousel-item-visible img {
   width: 100%;
   border-radius: 10px;
+}
+
+.carousel-promotion .carousel-item-visible .info-item {
+  background-color: #2ecece;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -15px;
+  padding: 10px;
+  border-radius: 0 0 10px 10px;
+}
+
+.carousel-promotion .carousel-item-visible .info-item h2 {
+  font-size: 1.5rem;
+  margin: 0;
+  color: #fff;
+}
+
+.carousel-promotion .carousel-item-visible .info-item h3 {
+  color: #fff;
 }
 
 .carousel-promotion .carousel-item {
@@ -545,26 +564,99 @@ header .insta .media-icon span {
   align-items: center;
 }
 
-.promotion .promotion-text .promotion-value {
-  margin-bottom: 20px;
-  padding-left: 15px;
-}
-
-.promotion .promotion-text .promotion-value h3 span {
-  font-size: 0.8rem;
-  color: #0a50bb;
-  margin-left: -15px;
-}
-
-.promotion .promotion-text h3 {
-  font-size: 3rem;
+.promotion .promotion-text h2 {
+  font-size: 2rem;
   color: #2ecece;
+  margin: 20px 0;
+  width: 100%;
 }
 
 .promotion .promotion-text p {
   font-size: 1rem;
   color: #acacac;
   margin-bottom: 10px;
+}
+
+/* experiencies */
+
+#experiencie {
+  height: 80px;
+}
+
+.experience {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.experience img {
+  width: 500px;
+  max-width: 100%;
+}
+
+.boxes-experience {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1000px;
+}
+
+.boxes-experience .box {
+  min-width: 45%;
+  max-height: 190px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+}
+
+.boxes-experience .box h3 {
+  width: fit-content;
+  font-size: 2rem;
+  margin-bottom: 5px;
+  color: #044787;
+  font-family: "coffecake", cursive;
+}
+
+.boxes-experience .box .font1 {
+  transform: rotate(-5deg);
+}
+
+.boxes-experience .box .font2 {
+  transform: rotate(5deg);
+}
+
+.boxes-experience .box .font3 {
+  transform: rotate(-8deg);
+}
+
+.boxes-experience .box img {
+  width: 300px;
+  height: 190px;
+  object-fit: cover;
+  margin: 0;
+  border: 5px solid #fff;
+  box-shadow: -5px 5px 7px rgb(172, 172, 172);
+  transition: 0.8s;
+  cursor: pointer;
+}
+
+.boxes-experience .box img:hover {
+  transform: scale(1.1);
+}
+
+.boxes-experience .box .img1 {
+  transform: rotate(-5deg);
+}
+.boxes-experience .box .img2 {
+  transform: rotate(5deg);
+}
+.boxes-experience .box .img3 {
+  transform: rotate(-8deg);
 }
 
 /* locations */
@@ -676,87 +768,6 @@ header .insta .media-icon span {
   width: 100%;
 }
 
-/* experiencies */
-
-#experiencie {
-  height: 80px;
-}
-
-.experience {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.experience img {
-  width: 500px;
-  max-width: 100%;
-}
-
-.boxes-experience {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  max-width: 1000px;
-}
-
-.boxes-experience .box {
-  min-width: 45%;
-  max-height: 190px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 50px 0;
-}
-
-.boxes-experience .box h3 {
-  width: fit-content;
-  font-size: 2rem;
-  margin-bottom: 5px;
-  color: #044787;
-  font-family: "coffecake", cursive;
-}
-
-.boxes-experience .box .font1 {
-  transform: rotate(-5deg);
-}
-
-.boxes-experience .box .font2 {
-  transform: rotate(5deg);
-}
-
-.boxes-experience .box .font3 {
-  transform: rotate(-8deg);
-}
-
-.boxes-experience .box img {
-  width: 300px;
-  height: 190px;
-  object-fit: cover;
-  margin: 0;
-  border: 5px solid #fff;
-  box-shadow: -5px 5px 7px rgb(172, 172, 172);
-  transition: 0.8s;
-  cursor: pointer;
-}
-
-.boxes-experience .box img:hover {
-  transform: scale(1.1);
-}
-
-.boxes-experience .box .img1 {
-  transform: rotate(-5deg);
-}
-.boxes-experience .box .img2 {
-  transform: rotate(5deg);
-}
-.boxes-experience .box .img3 {
-  transform: rotate(-8deg);
-}
-
 /* products menu */
 
 .products {
@@ -834,7 +845,7 @@ header .insta .media-icon span {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin-top: 20px;
+  margin-top: 60px;
   padding-top: 20px;
   gap: 20px;
   border-top: 1px solid #ebebeb;
@@ -939,6 +950,10 @@ header .insta .media-icon span {
     max-width: 300px;
   }
 
+  .carousel-promotion {
+    max-width: 80%;
+  }
+
   .promotion .promotion-text {
     position: static;
     width: 90%;
@@ -947,15 +962,6 @@ header .insta .media-icon span {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-
-  .promotion-text .promotion-value h2 {
-    font-size: 2rem;
-  }
-
-  .promotion-text .promotion-value h3 {
-    font-size: 2.3rem;
-    text-align: center;
   }
 
   .promotion {
@@ -1178,9 +1184,9 @@ header .insta .media-icon span {
 } */
 
 @media (max-width: 480px) {
-  /* .container-aboutUs .content-text {
-    padding: 10px;
-  } */
+  .container-promotion h2 {
+    font-size: 2.5rem;
+  }
 
   .container-aboutUs .content-text span {
     margin-left: 0;

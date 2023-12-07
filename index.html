@@ -13,7 +13,6 @@
       src="https://kit.fontawesome.com/b6c34f0ed7.js"
       crossorigin="anonymous"
     ></script>
-    <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -38,8 +37,8 @@
           >CARDÁPIO</a
         >
 
-        <a href="#location" class="link"> LOCALIZAÇÃO </a>
         <a href="#experiencie" class="link"> EXPERIÊNCIAS </a>
+        <a href="#location" class="link"> LOCALIZAÇÃO </a>
       </nav>
 
       <div class="insta">
@@ -66,7 +65,7 @@
           <input type="radio" name="radio-btn" id="radio3" />
           <input type="radio" name="radio-btn" id="radio4" />
 
-          <div class="slide first" data-aos="fade-up">
+          <div class="slide first">
             <img src="./imgs/img1.png" alt="img1" />
           </div>
           <div class="slide">
@@ -83,7 +82,7 @@
 
       <article class="container-text" data-aos="zoom-in" data-aos-delay="400">
         <div class="text">
-          <p>Viva experiências únicas em um logar paradisiaco.</p>
+          <p>Viva experiências únicas em um lugar paradisiaco.</p>
         </div>
       </article>
       <article
@@ -103,13 +102,7 @@
             para uma experiência única e emocionante em um ambiente naturalmente
             encantador.
           </p>
-          <p>
-            Aqui no Sabiaguaba Park, você encontrará uma variedade de
-            experiências incríveis e divertidas para aproveitar ao máximo a sua
-            visita. Desde passeios de barco, bugs, Helicóptero que oferecem
-            vistas panorâmicos até atividades emocionantes no rio, há algo para
-            todos os aventureiros e amantes da natureza.
-          </p>
+
           <strong
             >Não deixe para depois, venha e traga sua Família e amigos!</strong
           >
@@ -198,70 +191,119 @@
         </div>
       </article>
 
+      <div id="experiencie"></div>
+
+      <article class="experience">
+        <img
+          src="./imgs/experience.png"
+          alt="title experience"
+          data-aos="fade-down"
+        />
+        <div class="boxes-experience">
+          <div class="box" data-aos="fade-right">
+            <h3 class="font1">Barco</h3>
+            <img class="img1" src="./imgs/barco.png" alt="experience barco" />
+          </div>
+          <div class="box" data-aos="fade-left" data-aos-delay="200">
+            <h3 class="font3">Bug</h3>
+            <img class="img3" src="./imgs/buggy.png" alt="experience bug" />
+          </div>
+          <div class="box" data-aos="fade-right" data-aos-delay="300">
+            <h3 class="font2">Helicoptero</h3>
+            <img
+              class="img2"
+              src="./imgs/helicoptero.png"
+              alt="experience Helicoptero"
+            />
+          </div>
+          <div class="box" data-aos="fade-left" data-aos-delay="400">
+            <h3 class="font3">Pescaria</h3>
+            <img
+              class="img3"
+              src="./imgs/pescaria.png"
+              alt="experience Pescaria"
+            />
+          </div>
+          <div class="box" data-aos="fade-right" data-aos-delay="300">
+            <h3 class="font2">Paramotor</h3>
+            <img
+              class="img2"
+              src="./imgs/paramotor.png"
+              alt="experience Paramotor"
+            />
+          </div>
+          <div class="box" data-aos="fade-left" data-aos-delay="400">
+            <h3 class="font3">Massagem</h3>
+            <img
+              class="img3"
+              src="./imgs/massagem.jpg"
+              alt="experience Massagem"
+            />
+          </div>
+        </div>
+      </article>
+
       <article class="container-promotion" data-aos="fade-left">
+        <h2>Sujestões do chef</h2>
         <div class="promotion">
-          <!-- 
-                <div class="promotion-img"> -->
-          <!-- <img src="./imgs/imgs-products/camarãoEmpanadoVertical.png" alt=""> -->
-
           <div class="carousel-promotion">
-            <div carousel-item class="carousel-item-visible">
+            <!-- <div carousel-item class="carousel-item-visible">
               <img src="./imgs/imgs-products/bebidas.jpg" alt="bebidas" />
-            </div>
+            </div> -->
 
-            <div carousel-item class="carousel-item">
+            <!-- <div carousel-item class="carousel-item">
               <img
                 src="./imgs/imgs-products/caipiroscas.jpg"
                 alt="caipiroscas"
               />
-            </div>
+            </div> -->
 
-            <div carousel-item class="carousel-item">
+            <!-- <div carousel-item class="carousel-item">
               <img src="./imgs/imgs-products/coqueteis.jpg" alt="coqueteis" />
-            </div>
+            </div> -->
 
             <div carousel-item class="carousel-item">
               <img src="./imgs/imgs-products/entradas.jpg" alt="entradas" />
+              <div class="info-item">
+                <h2>Batata frita recheada</h2>
+                <h3>R$ 34,90</h3>
+              </div>
             </div>
 
             <div carousel-item class="carousel-item">
               <img src="./imgs/imgs-products/peixes.jpg" alt="peixes" />
+              <div class="info-item">
+                <h2>Tilápia Familia</h2>
+                <h3>R$ 149,90</h3>
+              </div>
             </div>
 
             <div carousel-item class="carousel-item">
               <img src="./imgs/imgs-products/sobremesas.jpg" alt="sobremesas" />
+              <div class="info-item">
+                <h2>Sobremesas</h2>
+                <h3>consultar valor</h3>
+              </div>
             </div>
 
             <div carousel-item class="carousel-item">
               <img src="./imgs/imgs-products/pratos.jpg" alt="Pratos" />
+              <div class="info-item">
+                <h2>Camarão crocante</h2>
+                <h3>R$ 69,90</h3>
+              </div>
             </div>
           </div>
 
           <div class="promotion-text">
-            <div class="promotion-value">
-              <h2>Camarão crocante</h2>
-              <h3>
+            <!-- <div class="promotion-value">
+              <h3>Camarão crocante</h3>
+              <h4>
                 R$ 69,90
                 <span>UND</span>
-              </h3>
-            </div>
-            <p>
-              Imagine saborear um suculento camarão grelhado enquanto o sol se
-              põe no horizonte, ou saborear um peixe fresco enquanto sente a
-              brisa suave acariciar seu rosto. No Parque Sabiaguaba, cada
-              refeição é uma combinação perfeita de sabores irresistíveis e uma
-              vista deslumbrante para tornar sua experiência vivida. Desfrute de
-              uma experiência culinária inesquecível na praia no Parque Natural
-              em Sabiaguaba! Delicie-se com nossos pratos magníficos e saborosos
-              enquanto aproveita a beleza natural ao seu redor.
-            </p>
-            <p>
-              Bem-vindo ao paraíso gastronômico à beira-mar! No Parque
-              Sabiaguaba, nossa equipe de talentosos chefs prepara uma variedade
-              de pratos que combinam perfeitamente com uma vista deslumbrante da
-              praia. Desde frutos do mar frescos até opções vegetarianas e
-              veganas, temos algo para agradar a todos os paladares.
-            </p>
+              </h4>
+            </div> -->
+            <h2>Experimente nossas delicias</h2>
 
             <p>
               Deleite-se com o sabor do mar em cada mordida. Desde pratos
@@ -336,63 +378,11 @@
           />
         </div>
       </article>
-
-      <div id="experiencie"></div>
-
-      <article class="experience">
-        <img
-          src="./imgs/experience.png"
-          alt="title experience"
-          data-aos="fade-down"
-        />
-        <div class="boxes-experience">
-          <div class="box" data-aos="fade-right">
-            <h3 class="font1">Barco</h3>
-            <img class="img1" src="./imgs/barco.png" alt="experience barco" />
-          </div>
-          <div class="box" data-aos="fade-left" data-aos-delay="200">
-            <h3 class="font3">Bug</h3>
-            <img class="img3" src="./imgs/buggy.png" alt="experience bug" />
-          </div>
-          <div class="box" data-aos="fade-right" data-aos-delay="300">
-            <h3 class="font2">Helicoptero</h3>
-            <img
-              class="img2"
-              src="./imgs/helicoptero.png"
-              alt="experience Helicoptero"
-            />
-          </div>
-          <div class="box" data-aos="fade-left" data-aos-delay="400">
-            <h3 class="font3">Pescaria</h3>
-            <img
-              class="img3"
-              src="./imgs/pescaria.png"
-              alt="experience Pescaria"
-            />
-          </div>
-          <div class="box" data-aos="fade-right" data-aos-delay="300">
-            <h3 class="font2">Paramotor</h3>
-            <img
-              class="img2"
-              src="./imgs/paramotor.png"
-              alt="experience Paramotor"
-            />
-          </div>
-          <div class="box" data-aos="fade-left" data-aos-delay="400">
-            <h3 class="font3">Massagem</h3>
-            <img
-              class="img3"
-              src="./imgs/massagem.jpg"
-              alt="experience Massagem"
-            />
-          </div>
-        </div>
-      </article>
     </main>
 
     <footer>
       <div class="footer-info">
-        <div class="footer-image" data-aos="fade-down" data-aos-delay="100">
+        <div class="footer-image" data-aos="fade-up" data-aos-delay="100">
           <a href="./index.html"><img src="imgs/logo.webp" alt="logo" /></a>
           <p>Viva experiências únicas em um logar paradisiaco</p>
         </div>

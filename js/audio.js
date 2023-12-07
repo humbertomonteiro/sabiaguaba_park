@@ -1,17 +1,10 @@
 const audios = [
-  { audio: "./audio/LOVEGOSTOSINHO.mp3", duration: "141600" },
-  { audio: "./audio/CoroaBoy.mp3", duration: "132600" },
-  // { audio: "./audio/02 - POSTURADO E CALMO.mp3", duration: "190200" },
-  {
-    audio: "./audio/BarulhodoFoguete.mp3",
-    duration: "125400",
-  },
-  { audio: "./audio/LapadaDela.mp3", duration: "135000" },
-  { audio: "./audio/AGENTESEENTREGA.mp3", duration: "145800" },
-  { audio: "./audio/GOLZINHOVERMELHO.mp3", duration: "137400" },
-  { audio: "./audio/IPHONE.mp3", duration: "137400" },
-  { audio: "./audio/Karolina.mp3", duration: "153000" },
-  { audio: "./audio/Revoada.mp3", duration: "184800" },
+  { audio: "./audio/Coldplay-Paradise.mp3", duration: "252000" },
+  { audio: "./audio/JasonMraz-I'mYours.mp3", duration: "204600" },
+  { audio: "./audio/MariaGadú-Shimbalaiê.mp3", duration: "190200" },
+  { audio: "./audio/Natiruts-Ela.mp3", duration: "211800" },
+  { audio: "./audio/Natiruts-QueroSerFelizTambém.mp3", duration: "199800" },
+  { audio: "./audio/PharrellWilliams-Happy.mp3", duration: "240000" },
 ];
 
 const divAudio = document.querySelector(".div-audio");
