@@ -85,8 +85,8 @@
           <p>Viva experiências únicas em um lugar paradisiaco.</p>
         </div>
       </article>
+      <div id="about"></div>
       <article
-        id="about"
         class="container-aboutUs"
         data-aos="fade-up"
         data-aos-delay="400"
@@ -430,12 +430,20 @@
       </div>
     </footer>
     <div class="div-audio">
-      <i class="fa-solid fa-volume-high icon-audio"></i>
-      <audio class="hidden" audio="true" autoplay></audio>
+      <div class="div-icon">
+        <i class="fa-solid fa-volume-high icon-audio"></i>
+      </div>
+      <audio
+        class="audio"
+        audio="true"
+        loop="true"
+        autoplay
+        src="./audio/SIMPLESASSIM-PedroPondé.mp3"
+      ></audio>
     </div>
-    <div class="div-next">
+    <!-- <div class="div-next">
       <i class="fa-solid fa-forward-fast"></i>
-    </div>
+    </div> -->
 
     <script src="./js/home.js"></script>
     <script src="./js/audio.js"></script>

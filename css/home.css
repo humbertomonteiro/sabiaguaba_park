@@ -15,6 +15,10 @@
   font-family: sans-serif;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -194,7 +198,7 @@ header .insta .media-icon span {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 200px;
+  margin-top: 80px;
   position: relative;
   z-index: -1;
 }
@@ -215,6 +219,10 @@ header .insta .media-icon span {
 }
 
 /* about us */
+
+#about {
+  height: 80px;
+}
 
 .about {
   display: flex;
@@ -325,7 +333,7 @@ header .insta .media-icon span {
   cursor: pointer;
   width: 50px;
   height: 50px;
-  border-radius: 20px 0 0 20px;
+  border-radius: 25px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -336,8 +344,9 @@ header .insta .media-icon span {
   background-color: #0a50bb;
 }
 
-.div-audio audio {
+.div-audio .audio {
   min-width: 300px;
+  border-radius: 0 20px 20px 0;
 }
 
 .hidden {
@@ -1069,8 +1078,7 @@ header .insta .media-icon span {
   }
 
   .container-text {
-    margin: 10px 0;
-    height: 150px;
+    margin-top: 30px;
   }
 
   .container-aboutUs .content-text {
