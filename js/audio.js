@@ -16,12 +16,17 @@ let showControls = true;
 
 divAudio.onclick = () => {
   showControls = !showControls;
+  let timeControls = 6000;
 
   if (showControls) {
     divIcon.innerHTML = '<i class="fa-solid fa-volume-high icon-audio"></i>';
 
     audio.controls = false;
+
+    timeControls = 6000;
   } else {
+    timeControls = 6000;
+
     divIcon.innerHTML = '<i class="fa-solid fa-volume-xmark icon-audio"></i>';
 
     audio.controls = true;
@@ -30,7 +35,7 @@ divAudio.onclick = () => {
       audio.controls = false;
       showControls = false;
       divIcon.innerHTML = '<i class="fa-solid fa-volume-high icon-audio"></i>';
-    }, 6000);
+    }, timeControls);
   }
 };
 
