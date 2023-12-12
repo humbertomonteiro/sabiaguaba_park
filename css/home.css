@@ -441,7 +441,7 @@ header .insta .media-icon span {
 }
 
 .categorie:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 
 .categorie h3 {
@@ -657,7 +657,6 @@ header .insta .media-icon span {
   border: 5px solid #fff;
   box-shadow: -5px 5px 7px rgb(172, 172, 172);
   transition: 0.8s;
-  cursor: pointer;
 }
 
 .boxes-experience .box img:hover {
@@ -877,6 +876,7 @@ header .insta .media-icon span {
 
 .footer-info .footer-img p {
   color: #acacac;
+  text-align: center;
 }
 
 .footer-info .contacts {
@@ -1174,23 +1174,6 @@ header .insta .media-icon span {
     margin: 50px -20px;
   }
 }
-/* 
-.container-imgs {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.container-imgs iframe {
-  width: 1000px;
-  max-width: 95%;
-  min-height: 100vh;
-} */
-
-/* .img-cardapio img {
-    max-width: 100%;
-} */
 
 @media (max-width: 480px) {
   .container-promotion h2 {
@@ -1240,16 +1223,28 @@ header .insta .media-icon span {
     gap: 50px;
   }
 
+  .footer-info .footer-img {
+    margin: 10px 0;
+    padding: 0px 20px;
+  }
+
   .footer-info .footer-image img {
     width: 200px;
   }
 
   .footer-info .contacts {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .footer-info .contacts div p {
     font-size: 0.8rem;
+  }
+
+  .footer-info .contacts .contact {
+    max-width: 100%;
+    padding: 20px;
   }
 }
 
